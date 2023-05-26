@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이페이지</title>
+</head>
+<body>
+    <header class="nav_bar">
+        <nav>
+            <ul class="menu_bar">
+                <li><a href="#">소개</a></li>
+                <li><a href="#">이용가이드</a></li>
+                <li><a href=" #">프로젝트</a></li>
+                <li><a href="#">마이페이지</a></li>
+                <li><a href="#">문의</a></li>
+                <li><a href="#">회원가입</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="banner">
+        <div class="banner_inner">
+            <h1 class="banner_text">
+                마이페이지
+            </h1>
+        </div>
+    </section>
+    <section class="section1">
+        <ul class="snb">
+            <li class="snb_li"><a href="#">회원정보</a></li>
+            <li class="snb_li"><a href="#">비밀번호 변경</a></li>
+            <li class="snb_li"><a href="#">입금계좌</a></li>
+            <li class="snb_li"><a href="#">크레딧</a></li>
+            <li class="snb_li"><a href="#">1:1 문의</a></li>
+        </ul>
+        <div class="">
+            <div class="section1_inner common_info">
+                <div class="title_box">
+                    <h1>기본정보</h1>
+                </div>
+                <div class="info_box">
+                    <div>
+                        <div>
+                            <label for="">이메일</label>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <label for="">이름</label>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <label for="">휴대전화</label>
+                            <div>
+                                <input type="text">
+                                <button></button>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="">수신동의</label>
+                            <div>
+                                네<input type="radio" name="agree">
+                                아니오<input type="radio" name="agree">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="">주민등록번호</label>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <div>실명인증이 완료되었습니다.</div>
+                        </div>
+                        <div>
+                            <label for="">우편번호</label>
+                            <div>
+                                <input type="text" >
+                                <button>우편번호 찾기</button>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="">주소</label>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <label for="">상세주소</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section1_inner adition_info">
+                <div class="title_box">
+                    <h1>부가정보</h1>
+                </div>
+                <div class="info_box">
+                    <div>
+                        <div>
+                            <label for="">성별</label>
+                            <div>
+                                <input type="radio" name="gender">
+                                <input type="radio" name="gender">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="">연령</label>
+                            <div>
+                                <input type="radio" name="age"><span>10대</span>
+                                <input type="radio" name="age"><span>20대</span>
+                                <input type="radio" name="age"><span>30대</span>
+                                <input type="radio" name="age"><span>40대</span>
+                                <input type="radio" name="age"><span>50대</span>
+                                <input type="radio" name="age"><span>60대 이상</span>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="">작업시간</label>
+                            <div>
+                                <input type="radio" name="date"><span>종일</span>
+                                <input type="radio" name="date"><span>오전</span>
+                                <input type="radio" name="date"><span>오후</span>
+                                <input type="radio" name="date"><span>야간</span>
+                                <input type="radio" name="date"><span>새벽</span>
+                                <input type="radio" name="date"><span>주중</span>
+                                <input type="radio" name="date"><span>토요일</span>
+                                <input type="radio" name="date"><span>일요일</span>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="">위약계층 여부<span>(복수선택가능)</span></label>
+                            <div>
+                                <input type="checkbox" name="vulnerable"><span>장애</span>
+                                <input type="checkbox" name="vulnerable"><span>임신/육아</span>
+                                <input type="checkbox" name="vulnerable"><span>경력단절여성</span>
+                                <input type="checkbox" name="vulnerable"><span>보훈</span>
+                                <input type="checkbox" name="vulnerable"><span>다문화가정</span>
+                                <input type="checkbox" name="vulnerable"><span>초/중/고등학생</span>
+                                <input type="checkbox" name="vulnerable"><span>대학생</span>
+                                <input type="checkbox" name="vulnerable"><span>투잡이상</span>
+                                <input type="checkbox" name="vulnerable"><span>(무직)미취업자</span>
+                                <input type="checkbox" name="vulnerable"><span>(무직)실직자</span>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="">우대사항<span>(장애인)</span></label>
+                            <div>
+                                <input type="radio" name="disabled"><span>유</span>
+                                <input type="radio" name="disabled"><span>무</span>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="">첨부파일</label>
+                            <div>
+                                <input type="file" name="attach" class="file_click" id="attach" onchange="javascript:document.getElementById('file_style').value = this.value.split('\\').pop()">
+                                <input type="text" value="첨부파일" class="file_style" readonly id="file_style" name="file_style"> 
+                                <label for="attach">파일찾기</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section1_inner path_info">
+                <div class="title_box">
+                    <h1>로그인 경로</h1>
+                </div>
+                <div>
+                    <label for="">Lable</label>
+                    <div>
+                        <input type="radio" name="lable">구글
+                        <input type="radio" name="lable">네이버
+                        <input type="radio" name="lable">카카오
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer_inner">
+            <div class="ft_flex">
+                <img src="" alt="#">
+            </div>
+            <div class="ft_flex">
+                <div>
+                    <a href="#">이용약관</a>
+                    <a href="#">개인정보처리방침</a>
+                </div>
+                <div>
+                    <p>(35214) 대전광역시 서구 대덕대로317번길 20 4층</p>
+                    <p>Tel : 042-488-6589 Fax : 042-367-0126</p>
+                </div>
+                <div>
+                    ⓒ Copyright 2023 EUCLIDSOFT All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

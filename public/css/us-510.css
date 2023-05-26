@@ -1,0 +1,900 @@
+@charset "utf-8";
+
+/* body 임시 css html 이동 시 코드 삭제 */
+body {
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1080px;
+}
+/* body 임시 css html 이동 시 코드 삭제 */
+
+
+
+
+
+/* Sementic modal css */
+.sem_modal {
+    width: 400px;
+    display: flex;
+    box-sizing: border-box;
+    border: 1px solid #F0F3F5;
+    box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    overflow: auto;
+    background-color: #fff;
+    font-family: 'NotoSansKR-R';
+
+}
+
+.sem_scrollbox {
+    width: 100%;
+    height: 660px;
+    position: relative;
+    overflow-y: auto;
+}
+
+.sem_scrollbox::-webkit-scrollbar {
+    width: 4px;
+    background: #E9ECEF;
+    border-radius: 10px;
+}
+
+.sem_scrollbox::-webkit-scrollbar-thumb{
+    width: 4px;
+    background: #9EA8B3;
+    border-radius: 10px;
+}
+
+.sem_scrollbox::-webkit-scrollbar-track {
+    width: 4px;
+    background: #E9ECEF;
+    border-radius: 10px;
+}
+
+.sem_modal_box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.sem_modal_box .sem_title_box {
+    width: 100%;
+    background-color: #007CBD;
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 8px 16px;
+    color: #fff;
+    position: relative;
+}
+
+.sem_modal_box .sem_arrow_box {
+    width: 24px;
+    height: 24px;
+    background: url(../images/work/option-btn-right.png) no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.sem_scrollbox > div {
+    width: 100%;
+    border-bottom: 1px solid #E9ECEF;
+    box-sizing: border-box;
+    padding: 16px;
+    background-color: #fff;
+}
+
+.sem_scrollbox > div > div {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sem_label_box {
+    width: 100%;
+    background-color: #F5F7F9;
+    box-sizing: border-box;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #E9ECEF;
+    color: #555F6D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.sem_label_box:hover {
+    background-color: #E9ECEF;
+}
+
+.label_icon_box {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.label_icon_box .icon_box {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.label_icon_box .view_icon {
+    background: url(../images/work/ctrl-btn-04.png) no-repeat;
+    background-size: cover;
+    
+}
+
+.label_icon_box .cursor_icon {
+    background-size: cover;
+    background: url(../images/work/mouse.png) no-repeat;
+}
+
+.label_icon_box .bin_icon {
+    background-size: cover;
+    background: url(../images/work/trash.png) no-repeat;
+}
+
+.sem_scrollbox .latitude {
+    width: 48%;
+    background-color: #fff;
+    border: 1px solid #F0F3F5;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+.sem_scrollbox .longitude {
+    width: 48%;
+    background-color: #fff;
+    border: 1px solid #F0F3F5;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+.sem_scrollbox .text_box {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    font-family: 'NotoSansKR-R';
+}
+
+.sem_scrollbox textarea {
+    width: 100%;
+    border: 1px solid #f0f3f5;
+    background-color: #fff;
+    font-family: 'NotoSansKR-R';
+    box-sizing: border-box;
+    padding: 8px;
+    resize: none;
+    height: 40px;
+    font-size: 15px;
+}
+
+.sem_label_box span {
+    font-size: 13px;
+}
+
+
+.sem_modal input[type=radio] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 51%;
+    border: 1px solid #E9ECEF;
+    position: relative;
+}
+
+.sem_modal input[type=radio]:checked {
+    border: 1px solid #E9ECEF;
+    display: inline-block;
+    width: 16px;height: 16px;
+    background-color: #fff;
+}
+
+.sem_modal input[type=radio]:checked::after{
+    content: "";
+    position: absolute;
+    top: calc(50% - 4px);
+    left: calc(50% - 4px);
+    width: 15px;height: 15px;
+    background-color: #007CBD;
+    border-radius: 51%;
+    width: 8px;height: 8px;
+}
+
+.sem_modal .sem_radio_box {
+    background-color: #f5f7f9;
+    border: 1px solid #f5f7f9;
+    box-sizing: border-box;
+    padding: 8px;
+    border-radius: 4px;
+    justify-content: flex-start;
+}
+
+.sem_modal .sem_radio_box p {
+    font-size: 14px;
+    color: #555f6d;
+
+}
+.sem_modal .sem_radio_box input {
+    margin-left: 20px;
+}
+
+.sem_modal button[type="submit"] {
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 17px;
+    border: 1px solid #007CBD;
+    background-color: #fff;
+    color: #007CBD;
+}
+/* Sementic modal css */
+
+
+
+
+
+
+
+/* text TO QA modal 1 */
+.modal {
+    width: 600px;
+    display: flex;
+    box-sizing: border-box;
+    border: 1px solid #F0F3F5;
+    box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    overflow: auto;
+    background-color: #fff;
+
+}
+
+.modal p {
+    margin: 0;
+}
+
+.scrollbox {
+    width: 100%;
+    height: 660px;
+    position: relative;
+    overflow-y: auto;
+}
+
+.scrollbox::-webkit-scrollbar {
+    width: 4px;
+    background: #E9ECEF;
+    border-radius: 10px;
+}
+
+.scrollbox::-webkit-scrollbar-thumb{
+    width: 4px;
+    background: #9EA8B3;
+    border-radius: 10px;
+}
+
+.scrollbox::-webkit-scrollbar-track {
+    width: 4px;
+    background: #E9ECEF;
+    border-radius: 10px;
+}
+
+.modal_box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.modal_box .title_box {
+    width: 100%;
+    background-color: #007CBD;
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 8px 16px;
+    color: #fff;
+    position: relative;
+}
+
+.modal_box .arrow_box {
+    width: 24px;
+    height: 24px;
+    background: url(../images/work/option-btn-right.png) no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.inner_content_box {
+    width: 100%;
+
+}
+
+.question_list_box {
+    width: 100%;
+}
+
+.inner_content_box > div {
+    width: 100%;
+    border-bottom: 1px solid #aaa;
+    box-sizing: border-box;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    color: #555F6D;
+}
+
+.userable_edit {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    margin: 0 0 8px;
+}
+
+/*  
+    재사용성을 위해 div:nth-child() 로 스타일링 하는 사용
+    추가적인 스타일링 및 수정 사항있을 시 변경 가능
+*/
+
+.userable_edit div:nth-child(2) {
+    width: 100%;
+    max-width: 86%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.userable_edit div:nth-child(2) span, .userable_edit div:nth-child(2) p,
+ .userable_edit div:nth-child(2) select, .userable_edit div:nth-child(2) textarea, 
+ .userable_edit div:nth-child(2) input, .userable_edit div:nth-child(2) label {
+    margin-bottom: 8px;
+}
+
+.userable_edit div:nth-child(1) {
+    width: auto;
+    font-size: 17px;
+}
+
+.userable_edit div:nth-child(1) span,.userable_edit div:nth-child(1) p,
+.userable_edit div:nth-child(1) input,.userable_edit div:nth-child(1) textarea,
+.userable_edit div:nth-child(1) h1,.userable_edit div:nth-child(1) h2,
+.userable_edit div:nth-child(1) h3,.userable_edit div:nth-child(1) h4,
+.userable_edit div:nth-child(1) h5,.userable_edit div:nth-child(1) h6,
+.userable_edit div:nth-child(1) a,.userable_edit div:nth-child(1) ul {
+    margin-bottom:8px;
+}
+
+/*  
+    재사용성을 위해 div:nth-child() 로 스타일링 하는 사용
+    추가적인 스타일링 및 수정 사항있을 시 변경 가능
+*/
+
+.inner_content_box > div .userable_edit p {
+    font-size: 15px;
+}
+
+
+.inner_content_box > div select {
+    width: 100%;
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid #F0F3F5;
+    color: #9EA8B3;
+    height: 32px;
+    margin-bottom: 8px;
+}
+
+.inner_content_box > div input {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #F0F3F5;
+    box-sizing: border-box;
+    color: #9EA8B3;
+    padding: 8px 4px;
+    height: 64px;
+    display: inline-block;
+    text-align: start;
+    vertical-align: text-top;
+    text-align: initial;
+}
+
+.inner_content_box > div textarea {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #F0F3F5;
+    box-sizing: border-box;
+    padding: 8px 4px;
+    height: 64px;
+    resize: none;
+    font-family: 'NotoSansKR-R';
+    color: #9EA8B3;
+}
+
+.text_length {
+    position: absolute;
+}
+
+.rabel_circle {
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 51%;
+    color: #fff;
+    margin: 8px 0;
+    font-size: 13px;
+}
+
+.yellow_rabel_btn {
+    background-color:rgba(225, 140, 0, 0.3);
+}
+
+.green_rabel_btn {
+    background-color: rgba(34, 139, 34, 0.3);
+}
+
+.red_rabel_btn {
+    background-color: rgba(240, 128, 128, 0.3);
+}
+
+.submit_box {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px;
+    position: relative;
+}
+
+.submit_box p {
+    font-size: 14px;
+    font-family: 'NotoSansKR-R';
+}
+
+.submit_box_wrap {
+    width: 100%;
+    background-color: #F5F7F9;
+    border-radius: 4px;
+    color: #555F6D;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+.submit_box_wrap > div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.submit_box_wrap input[type=radio] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 51%;
+    border: 1px solid #E9ECEF;
+    position: relative;
+    z-index: 2;
+}
+
+.submit_box_wrap input[type=radio]:checked {
+    border: 1px solid #E9ECEF;
+    display: inline-block;
+    width: 16px;height: 16px;
+    background-color: #fff;
+}
+
+.submit_box_wrap input[type=radio]:checked::after{
+    content: "";
+    position: absolute;
+    top: calc(50% - 4px);
+    left: calc(50% - 4px);
+    width: 15px;height: 15px;
+    background-color: #007CBD;
+    border-radius: 51%;
+    width: 8px;height: 8px;
+}
+
+.submit_box_wrap > div.disagree_select_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.disagree_select_box select {
+    width: 100%;
+    max-width: 80%;
+    color:#9EA8B3;
+    background-color: #fff;
+    border: 1px solid #F0F3F5;
+    padding: 4px 8px;
+}
+
+.submit_box_wrap > div.disagree_detail {
+    width: 100%;
+}
+
+.submit_box_wrap > div.disagree_detail textarea {
+    width: 100%;
+    margin-top: 8px;
+    color:#9EA8B3;
+    background-color: #fff;
+    border: 1px solid #F0F3F5;
+    padding: 6px 8px;
+    resize: none;
+    height: 20px;
+    font-family: 'NotoSansKR-R';
+}
+
+.submit_btn_box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.submit_btn_box button {
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 17px;
+    border: 1px solid #007CBD;
+    background-color: #fff;
+    color: #007CBD;
+}
+
+/* text TO QA modal 1 */
+
+
+
+
+
+
+
+
+/* Text TO QA 2 */
+
+.sec_modal {
+    width: 600px;
+    display: flex;
+    box-sizing: border-box;
+    border: 1px solid #F0F3F5;
+    box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    overflow: auto;
+    background-color: #fff;
+}
+
+.sec_modal p {
+    margin: 0;
+}
+
+.sec_scrollbox {
+    width: 100%;
+    height: 660px;
+    position: relative;
+    overflow-y: auto;
+}
+
+.sec_scrollbox::-webkit-scrollbar {
+    width: 4px;
+    background: #E9ECEF;
+    border-radius: 10px;
+}
+
+.sec_scrollbox::-webkit-scrollbar-thumb{
+    width: 4px;
+    background: #9EA8B3;
+    border-radius: 10px;
+}
+
+.sec_scrollbox::-webkit-scrollbar-track {
+    width: 4px;
+    background: #E9ECEF;
+    border-radius: 10px;
+}
+
+.sec_modal_box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.sec_modal_box .sec_title_box {
+    width: 100%;
+    background-color: #007CBD;
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 8px 16px;
+    color: #fff;
+    position: relative;
+}
+
+.sec_modal_box .sec_arrow_box {
+    width: 24px;
+    height: 24px;
+    background: url(../images/work/option-btn-right.png) no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.sec_inner_content_box {
+    width: 100%;
+}
+
+.sec_inner_content_box > div {
+    width: 100%;
+    border-bottom: 1px solid #aaa;
+    box-sizing: border-box;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    color: #555F6D;
+}
+
+.sec_userable_edit {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    margin: 0 0 8px;
+}
+
+/*  
+    재사용성을 위해 div:nth-child() 로 스타일링 하는 사용
+    추가적인 스타일링 및 수정 사항있을 시 변경 가능
+*/
+
+.sec_userable_edit div:nth-child(2) {
+    width: 100%;
+    max-width: 86%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.sec_userable_edit div:nth-child(2) span, .sec_userable_edit div:nth-child(2) p,
+ .sec_userable_edit div:nth-child(2) select, .sec_userable_edit div:nth-child(2) textarea, 
+ .sec_userable_edit div:nth-child(2) input, .sec_userable_edit div:nth-child(2) label {
+    margin-bottom: 8px;
+}
+
+.sec_userable_edit div:nth-child(1) {
+    width: auto;
+    font-size: 17px;
+}
+
+.sec_userable_edit div:nth-child(1) span,.sec_userable_edit div:nth-child(1) p,
+.sec_userable_edit div:nth-child(1) input,.sec_userable_edit div:nth-child(1) textarea,
+.sec_userable_edit div:nth-child(1) h1,.sec_userable_edit div:nth-child(1) h2,
+.sec_userable_edit div:nth-child(1) h3,.sec_userable_edit div:nth-child(1) h4,
+.sec_userable_edit div:nth-child(1) h5,.sec_userable_edit div:nth-child(1) h6,
+.sec_userable_edit div:nth-child(1) a,.sec_userable_edit div:nth-child(1) ul {
+    margin-bottom:8px;
+}
+
+/*  
+    재사용성을 위해 div:nth-child() 로 스타일링 하는 사용
+    추가적인 스타일링 및 수정 사항있을 시 변경 가능
+*/
+
+.sec_inner_content_box > div .sec_userable_edit p {
+    font-size: 15px;
+}
+
+
+.sec_inner_content_box > div select {
+    width: 100%;
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid #F0F3F5;
+    color: #9EA8B3;
+    height: 32px;
+    margin-bottom: 8px;
+}
+
+.sec_inner_content_box > div input {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #F0F3F5;
+    box-sizing: border-box;
+    color: #9EA8B3;
+    padding: 8px 4px;
+    height: 64px;
+    display: inline-block;
+    text-align: start;
+    vertical-align: text-top;
+    text-align: initial;
+}
+
+.sec_inner_content_box > div textarea {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #F0F3F5;
+    box-sizing: border-box;
+    padding: 8px 4px;
+    height: 64px;
+    resize: none;
+    font-family: 'NotoSansKR-R';
+    color: #9EA8B3;
+}
+
+.rabel_circle {
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 51%;
+    color: #fff;
+    margin: 8px 0;
+    font-size: 13px;
+}
+
+.yellow_rabel_btn {
+    background-color:rgba(225, 140, 0, 0.3);
+}
+
+.green_rabel_btn {
+    background-color: rgba(34, 139, 34, 0.3);
+}
+
+.red_rabel_btn {
+    background-color: rgba(240, 128, 128, 0.3);
+}
+
+.blue_rabel_btn {
+    background-color: rgba(100, 149, 237, 0.3);
+}
+
+.submit_box {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px;
+    position: relative;
+}
+
+.submit_box p {
+    font-size: 14px;
+    font-family: 'NotoSansKR-R';
+}
+
+.submit_box_wrap {
+    width: 100%;
+    background-color: #F5F7F9;
+    border-radius: 4px;
+    color: #555F6D;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+.submit_box_wrap > div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.submit_box_wrap input[type=radio] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 51%;
+    border: 1px solid #E9ECEF;
+    position: relative;
+    z-index: 2;
+}
+
+.submit_box_wrap input[type=radio]:checked {
+    border: 1px solid #E9ECEF;
+    display: inline-block;
+    width: 16px;height: 16px;
+    background-color: #fff;
+}
+
+.submit_box_wrap input[type=radio]:checked::after{
+    content: "";
+    position: absolute;
+    top: calc(50% - 4px);
+    left: calc(50% - 4px);
+    width: 15px;height: 15px;
+    background-color: #007CBD;
+    border-radius: 51%;
+    width: 8px;height: 8px;
+}
+
+.submit_box_wrap > div.disagree_select_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.disagree_select_box select {
+    width: 100%;
+    max-width: 80%;
+    color:#9EA8B3;
+    background-color: #fff;
+    border: 1px solid #F0F3F5;
+    padding: 4px 8px;
+}
+
+.submit_box_wrap > div.disagree_detail {
+    width: 100%;
+}
+
+.submit_box_wrap > div.disagree_detail textarea {
+    width: 100%;
+    margin-top: 8px;
+    color:#9EA8B3;
+    background-color: #fff;
+    border: 1px solid #F0F3F5;
+    padding: 6px 8px;
+    resize: none;
+    height: 20px;
+    font-family: 'NotoSansKR-R';
+}
+
+.submit_btn_box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.submit_btn_box button {
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 17px;
+    border: 1px solid #007CBD;
+    background-color: #fff;
+    color: #007CBD;
+}
+
+/* Text TO QA 2 */ 

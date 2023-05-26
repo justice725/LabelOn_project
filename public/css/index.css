@@ -1,0 +1,370 @@
+@charset "utf-8";
+
+header {
+    padding-bottom: 38px;
+}
+
+/* banner css */
+.banner {
+    width: 100%;
+    height: auto;
+}
+
+.ban_box {
+    position: relative;
+}
+
+.banner .ban_float {
+    width: 100%;
+    position: relative;
+}
+
+.banner .ban_float img.ban_img {
+    width: 100%;
+}
+
+.ban_text_box {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 40%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    color: #fff;
+}
+
+.ban_text_box .ban_text {
+    padding: 10px 0 15px;
+    font-size: 21px;
+}
+
+.ban_text_box .ban_text span {
+    color: #FF805B;
+}
+
+.ban_text_box img.logo_img {
+    width: 150px;
+    padding: 20px 0 30px 0;
+}
+
+.ban_ab {
+    position: absolute;
+    width: 87px;
+    height: 87px;
+    background-color: #FF805B;
+    border-radius: 51%;
+    bottom: -10px;
+    right: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 17px;
+    color: #fff;
+}
+
+.ban_ab .login_icon {
+    width: 25px;
+}
+/* banner css */
+
+/* main section css */
+.container {
+    width: 100%;
+    max-width: 1280px;
+    padding: 150px 0 100px;
+}
+
+.section1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section1 .sec1_left_box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.sec1_btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 110px;
+    height: 50px;
+}
+
+.sec1_btn li.prev, .sec1_btn li.next {
+    text-indent: -9999px;
+    position: relative;
+}
+
+.sec1_btn li.prev:after {
+    content: "";
+    background: url(../images/icon/arrow-narrow-left.png) no-repeat;
+    background-size: cover;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+.sec1_btn li.prev:hover::after, .sec1_btn li.next:hover::after {
+    opacity: 1;
+}
+
+.sec1_btn li.next:after {
+    content: "";
+    background: url(../images/icon/arrow-narrow-right.png) no-repeat;
+    background-size: cover;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+.sec1_btn li.on::after {
+    opacity: 1;
+}
+
+.sec1_btn li.center {
+    font-size: 20px;
+    margin-top: -3px;
+    color: #E9ECEF;
+}
+
+.section1 .sec1_left_box .title{
+    font-size: 34px;
+    color: #1B242C;
+    padding-bottom: 40px;
+    font-weight: 500;
+    font-family: 'NotoSansKR-M';
+}
+
+.section1 .sec1_left_box .text {
+    color: #555F6D;
+}
+
+.section1 .sec1_right_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.section1 .sec1_right_box .sec1_cate {
+    width: 240px;
+    height: 270px;
+    margin: 0 30px 0 0;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+.section1 .sec1_right_box .sec1_cate:first-child {
+    box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.30);
+}
+
+.sec1_cate .text_box {
+    box-sizing: border-box;
+    padding:24px 12px 12px;
+    height: 135px;
+}
+
+.sec1_cate .text_box .title {
+    padding: 5px 0;
+}
+
+.sec1_cate .text_box .text {
+    color: #555F6D;
+    font-size: 15px;
+    padding: 5px 0;
+}
+
+.sec1_cate .img_box {
+    height: 135px;
+}
+
+.sec1_cate .img_ab_box {
+    position: absolute;
+    box-sizing: border-box;
+    bottom: calc(50% - 8%);
+    left: 0;
+    background-color: #007CBD;
+    color: #fff;
+    padding: 6px 15px 6px 10px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.section2 {
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 150px 0 0 0;
+
+}
+
+.section2 .title {
+    font-size: 34px;
+    color: #1B242C;
+    font-family: 'NotoSansKR-R';
+    
+}
+
+.grid_box {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.grid_4 {
+    box-sizing: border-box;
+    border: 1px solid #F0F3F5;
+    width: 305px;
+    border-radius: 8px;
+    margin-bottom: 50px;
+}
+
+.grid_inner_top {
+    box-sizing: border-box;
+    border-bottom: 1px solid #f0f3f5;
+    padding: 16px 24px;
+}
+
+.grid_inner_top h1 {
+    color: #1B242C;
+}
+
+.grid_inner_flex {
+    padding-bottom: 8px;
+}
+
+.grid_inner_top p {
+    color: #555F6D;
+    font-size: 13px;
+}
+
+.grid_inner_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.grid_inner_bot {
+    box-sizing: border-box;
+    padding: 8px 24px 16px 24px;
+}
+
+.grid_inner_bot .color_g {
+    color: #555F6D;
+}
+
+.grid_inner_bot {
+    color: #007CBD;
+}
+
+.grid_inner_bot .coin_icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #007CBD;
+    border-radius: 51%;
+    width: 14px;
+    height: 14px;
+    color: #fff;
+    font-size: 8px;
+    margin-right: 3px;
+}
+
+.grid_percent {
+    padding-bottom: 20px;
+}
+
+.grid_notice {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 32px;
+    border: 1px solid #007cbd;
+    border-radius: 100px;
+    margin: 0 auto;
+}
+
+.plus_btn {
+    color: #1B242C;
+    font-size: 21px;
+    position: relative;
+    display: flex;
+}
+
+.plus_btn:after {
+    content: "";
+    width: 48px;
+    height: 48px;
+    display: inline-flex;
+    background-color: #007CBD;
+    border-radius: 51%;
+    position: absolute;
+    left: -11%;
+    z-index: -1;
+    top: -25%;
+}
+
+.plus_btn a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plus_btn a::after{
+    content: "";
+    display: inline-flex;
+    background: url(../images/icon/program-more.png) no-repeat;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    right: 0;
+}
+/* main section css */
+
+/* account modal css */
+.account_modal {
+    width: 446px;
+    height: 400px;
+    box-sizing: border-box;
+    border: #f0f3f5;
+    box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 25%;
+}
+/* account modal css */
+
+/* 현재 마이페이지 클릭 시 나타나는 모달 창 작업 진행 중
+퍼블리싱 작업 우선순위 확인 후 재작업 진행 예정 */
