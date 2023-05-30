@@ -818,6 +818,11 @@ body {
     margin: 0 0 8px;
 }
 
+.sec_inner_content_box .number_box > p {
+    font-family: 'NotoSansKR-500';
+    font-size: 17px;
+}
+
 /*  
     재사용성을 위해 div:nth-child() 로 스타일링 하는 사용
     추가적인 스타일링 및 수정 사항있을 시 변경 가능
@@ -877,6 +882,10 @@ body {
     color: #9EA8B3;
     height: 32px;
     margin-bottom: 8px;
+}
+
+.sec_inner_content_box > div select option {
+    text-indent: 3px;
 }
 
 .sec_inner_content_box > div select::placeholder {
