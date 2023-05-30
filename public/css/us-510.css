@@ -148,7 +148,13 @@ body {
 .label_icon_box .view_icon {
     background: url(../images/work/ctrl-btn-04.png) no-repeat;
     background-size: cover;
-    
+}
+
+.label_icon_box .view_icon:hover {
+    color: #1B242C;
+    filter: opacity(0.7) drop-shadow(0 0 0 #1B242C);
+    /* color: red; */
+    /* filter: opacity(0.5) drop-shadow(0 0 0 red); */
 }
 
 .label_icon_box .cursor_icon {
@@ -156,9 +162,19 @@ body {
     background: url(../images/work/mouse.png) no-repeat;
 }
 
+.label_icon_box .cursor_icon:hover {
+    color: #1B242C;
+    filter: opacity(0.7) drop-shadow(0 0 0 #1B242C);
+}
+
 .label_icon_box .bin_icon {
     background-size: cover;
     background: url(../images/work/trash.png) no-repeat;
+}
+
+.label_icon_box .bin_icon:hover {
+    color: #1B242C;
+    filter: opacity(0.7) drop-shadow(0 0 0 #1B242C);
 }
 
 .sem_scrollbox .latitude {
