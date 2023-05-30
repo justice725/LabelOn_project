@@ -454,6 +454,10 @@ body {
     height: 32px;
     margin-bottom: 8px;
 }
+.inner_content_box > div select:focus {
+    outline: none;
+    border:1px solid #9EA8B3;
+}
 
 .inner_content_box > div input {
     width: 100%;
@@ -470,6 +474,11 @@ body {
     text-align: initial;
 }
 
+.inner_content_box > div input:focus {
+    outline: none;
+    border:1px solid #9EA8B3;
+}
+
 .inner_content_box > div textarea {
     width: 100%;
     padding: 0;
@@ -482,6 +491,12 @@ body {
     font-family: 'NotoSansKR-R';
     color: #9EA8B3;
 }
+
+.inner_content_box > div textarea:focus {
+    border:1px solid #9EA8B3;
+}
+
+
 
 .text_length {
     position: absolute;
@@ -808,6 +823,11 @@ body {
     margin-bottom: 8px;
 }
 
+.sec_inner_content_box > div select:focus {
+    outline: none;
+    border:1px solid #9EA8B3;
+}
+
 .sec_inner_content_box > div input {
     width: 100%;
     padding: 0;
@@ -823,6 +843,11 @@ body {
     text-align: initial;
 }
 
+.sec_inner_content_box > div input:focus {
+    outline: none;
+    border:1px solid #9EA8B3;
+}
+
 .sec_inner_content_box > div textarea {
     width: 100%;
     padding: 0;
@@ -834,6 +859,11 @@ body {
     resize: none;
     font-family: 'NotoSansKR-R';
     color: #9EA8B3;
+}
+
+.sec_inner_content_box > div textarea:focus {
+    outline: none;
+    border:1px solid #9EA8B3;
 }
 
 .rabel_circle {
