@@ -32,7 +32,6 @@ body {
 
 .sem_scrollbox {
     width: 100%;
-    height: 755px;
     position: relative;
     overflow-y: auto;
 }
@@ -106,7 +105,7 @@ body {
 }
 
 .sem_scrollbox > div > div {
-    margin-bottom: 13px;
+    margin-bottom: 12px;
     display: flex;
     justify-content: space-between;
 }
@@ -183,6 +182,9 @@ body {
     border-radius: 4px;
     box-sizing: border-box;
     padding: 8px;
+    color: #555F6D;
+    font-family: 'NotoSansKR-400';
+    font-size: 15px;
 }
 
 .sem_scrollbox .longitude {
@@ -192,6 +194,9 @@ body {
     border-radius: 4px;
     box-sizing: border-box;
     padding: 8px;
+    color: #555F6D;
+    font-family: 'NotoSansKR-400';
+    font-size: 15px;
 }
 
 .sem_scrollbox .text_box {
@@ -201,6 +206,13 @@ body {
     align-items: flex-start;
     flex-direction: column;
     font-family: 'NotoSansKR-400';
+}
+
+.sem_scrollbox .text_box p {
+    font-family: 'NotoSansKR-400';
+    color: #1B242C;
+    font-size: 15px;
+    margin-bottom: 4px;
 }
 
 .sem_scrollbox textarea {
@@ -214,6 +226,12 @@ body {
     height: 40px;
     font-size: 15px;
     color: #9EA8B3;
+    text-indent: 3px;
+}
+
+.sem_scrollbox textarea::placeholder {
+    color: #9EA8B3;
+    font-family: 'NotoSansKR-400';
 }
 
 .sem_label_box span {
@@ -257,15 +275,19 @@ body {
     border-radius: 4px;
     justify-content: flex-start;
     height: 42px;
+    font-family: 'NotoSansKR-400';
 }
 
 .sem_modal .sem_radio_box p {
     font-size: 15px;
     color: #555f6d;
+    cursor: default;
 }
 
 .sem_modal .sem_radio_box label {
     font-size: 15px;
+    cursor: pointer;
+    color: #555F6D;
 }
 
 .sem_modal .sem_radio_box input {
@@ -438,6 +460,12 @@ body {
     추가적인 스타일링 및 수정 사항있을 시 변경 가능
 */
 
+.inner_content_box > div .userable_edit .number_box p {
+    font-size: 17px;
+    font-family: 'NotoSansKR-500';
+    color: #555F6D;
+}
+
 .inner_content_box > div .userable_edit p {
     font-size: 15px;
 }
@@ -452,10 +480,19 @@ body {
     color: #9EA8B3;
     height: 32px;
     margin-bottom: 8px;
+    text-indent: 3px;
+    font-family: 'NotoSansKR-400';
+    color: #9EA8B3;
 }
 .inner_content_box > div select:focus {
     outline: none;
     border:1px solid #9EA8B3;
+}
+
+.inner_content_box > div select::placeholder {
+    font-size: 15px;
+    font-family: 'NotoSansKR-400';
+    color: #9EA8B3;
 }
 
 .inner_content_box > div input {
@@ -489,12 +526,19 @@ body {
     resize: none;
     font-family: 'NotoSansKR-400';
     color: #9EA8B3;
+    text-indent: 3px;
 }
 
 .inner_content_box > div textarea:focus {
     border:1px solid #9EA8B3;
 }
 
+.inner_content_box > div textarea::placeholder {
+    font-size: 15px;
+    font-family: 'NotoSansKR-400';
+    color: #9EA8B3;
+    text-indent: 3px;
+}
 
 
 .text_length {
@@ -530,8 +574,9 @@ body {
 }
 
 .submit_box p {
-    font-size: 14px;
+    font-size: 15px;
     font-family: 'NotoSansKR-400';
+    color: #555F6D;
 }
 
 .submit_box_wrap {
@@ -615,12 +660,18 @@ body {
     font-family: 'NotoSansKR-400';
 }
 
+.submit_box_wrap label {
+    cursor: pointer;
+    color: #555F6D;
+}
+
 .submit_btn_box {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    font-family: 'NotoSansKR-400';
+    font-size: 15px;
 }
 
 .submit_btn_box button {
@@ -689,7 +740,7 @@ body {
 
 .sec_scrollbox {
     width: 100%;
-    height: 680px;
+    
     position: relative;
     overflow-y: auto;
 }
@@ -806,6 +857,12 @@ body {
     추가적인 스타일링 및 수정 사항있을 시 변경 가능
 */
 
+.sec_inner_content_box > div .sec_userable_edit .number_box p {
+    font-family: 'NotoSansKR-500';
+    font-size: 17px;
+    color: #555F6D;
+}
+
 .sec_inner_content_box > div .sec_userable_edit p {
     font-size: 15px;
 }
@@ -820,6 +877,13 @@ body {
     color: #9EA8B3;
     height: 32px;
     margin-bottom: 8px;
+}
+
+.sec_inner_content_box > div select::placeholder {
+    color: #9EA8B3;
+    font-size: 15px;
+    text-indent: 3px;
+    font-family: 'NotoSansKR-400';
 }
 
 .sec_inner_content_box > div select:focus {
@@ -858,11 +922,19 @@ body {
     resize: none;
     font-family: 'NotoSansKR-400';
     color: #9EA8B3;
+    text-indent: 3px;
 }
 
 .sec_inner_content_box > div textarea:focus {
     outline: none;
     border:1px solid #9EA8B3;
+}
+
+.sec_inner_content_box > div textarea::placeholder {
+    color: #9EA8B3;
+    font-size: 15px;
+    text-indent: 3px;
+    font-family: 'NotoSansKR-400';
 }
 
 .rabel_circle {
@@ -898,8 +970,9 @@ body {
 }
 
 .submit_box p {
-    font-size: 14px;
+    font-size: 15px;
     font-family: 'NotoSansKR-400';
+    color: #555F6D;
 }
 
 .submit_box_wrap {

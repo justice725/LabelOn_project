@@ -19,7 +19,6 @@ body {
 /* pop modal css */
 .pop_modal {
     width: 700px;
-    height: 594px;
     position: absolute;
     top: calc(50% - 297px);
     left: calc((50% - 350px));
@@ -49,6 +48,7 @@ body {
 .pop_title_box p {
     font-size: 17px;
     font-family: "NotoSansKR-500";
+    color: #1B242C;
 }
 
 .pop_title_box button {
@@ -158,6 +158,7 @@ body {
  .pop_modal .pop_content_box .context_title p {
     font-size: 17px;
     font-family: "NotoSansKR-400";
+    color: #1B242C;
 }
 
 .pop_modal .pop_content_box .context_inner {
@@ -175,6 +176,7 @@ body {
     position: relative;
     line-height: 1.8;
     margin-left: 26px;
+    font-size: 15px;
 }
 
 .pop_modal .pop_content_box .context_inner > p > span {
@@ -188,6 +190,7 @@ body {
     position: absolute;
     left: -26px;
     top: 1px;
+    font-size: 13px;
 }
 
 .pop_modal .pop_close_box {
@@ -217,6 +220,11 @@ body {
 .pop_modal .pop_close_box label {
     cursor: pointer;
     font-size: 15px ;
+    color: #555F6D;
+}
+
+.pop_modal .pop_close_box label:hover {
+    text-decoration: underline;
 }
 
 .pop_modal .pop_close_box input[type="checkbox"]:checked {
@@ -238,6 +246,12 @@ body {
     background-color: #fff;
     cursor: pointer;
     font-size: 13px;
+    color: #555F6D;
+    font-family: 'NotoSansKR-400';
+}
+
+.pop_modal .pop_close_box button:hover {
+    text-decoration: underline ;
 }
 
 

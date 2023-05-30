@@ -57,6 +57,11 @@ header .logo_box img {
     margin-right: 5px;
 }
 
+.snb .user_account:hover {
+    color: #1B242C;
+    filter: opacity(0.7) drop-shadow(0 0 0 #1B242C);
+}
+
 /* us-600 header */
 
 /* section */
@@ -254,6 +259,10 @@ header .logo_box img {
     border: 1px solid #9ea8b3;
 }
 
+.content_info input[type=text]::placeholder {
+    color: #9EA8B3;
+}
+
 .content_detail {
     width: 100%;
     max-width: 1247px;
@@ -388,7 +397,7 @@ header .logo_box img {
 
 .userable_edit div:nth-child(2) {
     width: 100%;
-    max-width: 494px;
+    max-width: 500px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -403,7 +412,11 @@ header .logo_box img {
 
 .userable_edit div:nth-child(1) {
     width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 17px;
+    height: 32px;
 }
 
 .userable_edit div:nth-child(1) span,.userable_edit div:nth-child(1) p,
@@ -415,6 +428,17 @@ header .logo_box img {
     margin-bottom:8px;
 }
 
+.userable_edit .number_box p {
+    font-family: 'NotoSansKR-500';
+}
+
+.userable_edit .number_box p.fs_15 {
+    font-family: 'NotoSansKR-400';
+    font-size: 15px;
+    margin: 0;
+    text-align: center;
+}
+
 /*  
     재사용성을 위해 div:nth-child() 로 스타일링 하는 사용
     추가적인 스타일링 및 수정 사항있을 시 변경 가능
@@ -422,11 +446,23 @@ header .logo_box img {
 
 p.fs_15 {
     font-size: 15px;
+    margin: 0;
+    text-align: center;
 }
 
 .inner_content_box > div input.ht_32 {
     height: 32px;
     margin-bottom: 0;
+    color: #9EA8B3;
+    text-indent: 3px;
+    font-family: 'NotoSansKR-400';
+    font-size: 15px;
+}
+
+.inner_content_box > div input.ht_32::placeholder {
+    color: #9EA8B3;
+    font-family: 'NotoSansKR-400';
+    font-size: 15px;
 }
 
 
@@ -441,11 +477,20 @@ p.fs_15 {
     height: 32px;
     margin-bottom: 8px;
     border-radius: 4px;
+    text-indent: 3px;
+    font-family: 'NotoSansKR-400';
+    font-size: 15px;
 }
 
 .inner_content_box > div select:focus {
     outline: none;
     border:1px solid #9EA8B3;
+    
+}
+
+.inner_content_box > div select::placeholder {
+    font-family: 'NotoSansKR-400';
+    font-size: 15px;
 }
 
 .inner_content_box > div input {
@@ -458,6 +503,7 @@ p.fs_15 {
     padding: 8px 4px;
     height: 66px;
     border-radius: 4px;
+    font-size: 15px;
 }
 
 .inner_content_box > div input:focus {
@@ -636,10 +682,18 @@ p.fs_15 {
     resize: none;
     font-family: 'NotoSansKR-400';
     color: #9EA8B3;
+    text-indent: 8px;
+    font-size: 15px;
 }
 
 .inner_content_box textarea:focus {
     border:1px solid #9EA8B3;
+}
+
+.inner_content_box textarea::placeholder {
+    color: #9EA8B3;
+    font-size: 15px;
+    font-family: 'NotoSansKR-400';
 }
 
 .inner_content_box > div .user_set_box .length_box {

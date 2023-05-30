@@ -15,7 +15,6 @@ body {
 .pop_modal_application {
     width: 100%;
     max-width: 630px;
-    height: 1042px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,6 +51,11 @@ body {
     cursor: pointer;
 }
 
+.pop_modal_application .pop_application_title_box button:hover {
+    color: #1B242C;
+    filter: opacity(0.7) drop-shadow(0 0 0 #1B242C);
+}
+
 .pop_application_content_box {
     width: 100%;
     display: flex;
@@ -61,7 +65,7 @@ body {
     flex-wrap: nowrap;
     box-sizing: border-box;
     padding: 16px;
-    height: 786px;
+    /* height: 786px; */
 }
 
 .pop_application_content_box > div {
@@ -98,6 +102,7 @@ body {
     margin-bottom: 4px;
     font-size: 17px;
     color: #1B242C;
+    cursor: default;
 }
 
 .pop_application_content_box button.search_address {
@@ -111,6 +116,12 @@ body {
     cursor: pointer;
     font-size: 17px;
     font-family: 'NotoSansKR-500';
+    transition: all 0.2s;
+}
+
+.pop_application_content_box button.search_address:hover {
+    color: #fff !important;
+    background-color: #00466B !important;
 }
 
 input[type="text"].readonly {
@@ -251,6 +262,8 @@ input[readonly]:focus {
 
 .pop_application_content_box .detail_time p {
     margin-bottom: 15px;
+    font-size: 17px;
+    color: #1B242C;
 }
 
 .pop_application_content_box .detail_time > div {
@@ -263,6 +276,8 @@ input[readonly]:focus {
 
 .pop_application_content_box .detail_time > div label {
     margin-right: 11px;
+    font-size: 15px;
+    color: #555F6D;
 }
 
 .pop_application_content_box .detail_through {
@@ -291,6 +306,11 @@ input[readonly]:focus {
     font-family: 'NotoSansKR-400';
     font-size: 17px;
     color: #9EA8B3;
+    text-indent: 8px;
+}
+
+.pop_application_content_box .detail_ai{
+    height: 78px;
 }
 
 .pop_application_content_box .detail_ai > div {
@@ -299,4 +319,196 @@ input[readonly]:focus {
 
 .pop_application_content_box .detail_ai > div input {
     margin: 3px 8px 0 0;
+}
+
+.pop_application_content_box .detail_ai > div label {
+    margin-right: 16px;
+    color: #555F6D;
+}
+
+.pop_application_content_box .detail_ai p {
+    margin-bottom: 15px;
+    color: #1B242C;
+}
+
+.pop_application_content_box .detail_ai label {
+    font-size: 15px;
+}
+
+.pop_application_content_box .detail_vulnerable {
+    height: 78px;
+}
+
+.pop_application_content_box .detail_vulnerable p {
+    margin-bottom: 15px;
+    color: #1B242C;
+    font-size: 17px;
+}
+
+.pop_application_content_box .detail_vulnerable label {
+    color: #555F6D;
+    font-size: 15px;
+}
+
+.pop_application_content_box .detail_terms {
+    padding-bottom: 0;
+}
+
+.pop_application_content_box .detail_terms .tale_box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 26px;
+    color: #555F6D;
+    font-size: 15px;
+    position: relative;
+}
+
+.pop_application_content_box .detail_terms .tale_box:after {
+    content: "";
+    width: 237.26px;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    background-color: #9EA8B3;
+}
+
+.pop_application_content_box .detail_terms .tale_box:before {
+    content: "";
+    width: 237.26px;
+    height: 1px;
+    position: absolute;
+    right: 0;
+    background-color: #9EA8B3;
+}
+
+.pop_application_content_box .agree_terms {
+    width: 100%;
+    max-width: 598px;
+    box-sizing: border-box;
+    padding: 16px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    /* height: 144px; */
+    
+}
+
+.pop_application_content_box .agree_terms > div:first-child {
+    width: 100%;
+    max-width: 598px;
+    background-color: #F5F7F9;
+    height: 42px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 8px 16px;
+    border: 1px solid #F0F3F5;
+}
+
+.pop_application_content_box .agree_terms > div:first-child > label {
+    color:#1B242C ;
+    font-family: 'NotoSansKR-500';
+    font-size: 17px;
+}
+
+.pop_application_content_box .agree_terms input[type="checkbox"] {
+    width: 20px; height: 20px;
+    border-radius: 2px;
+    margin-right: 8px;
+}
+
+.pop_application_content_box .agree_terms input[type="checkbox"]:after {
+    content: "";
+    position: absolute;
+    width: 12px;height: 12px;
+    /* 절대경로 확인 필요 */
+    background: url(../images/checked.png) no-repeat;
+    /* 절대경로 확인 필요 */
+    background-size: contain;
+    top: 4px;
+    left: 3px;
+}
+
+.pop_application_content_box .agree_terms > div:nth-child(2) {
+    width: 100%;
+    max-width: 598px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 16px;
+    border: 1px solid #F0F3F5;
+}
+
+.pop_application_content_box .agree_terms > div:nth-child(2) > div {
+    width: 100%;
+    max-width: 598px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 26px;
+    
+}
+
+.pop_application_content_box .agree_terms > div:nth-child(2) > div:not(:last-child ) {
+    padding-bottom: 4px;
+}
+
+.pop_application_content_box .agree_terms > div:nth-child(2) label {
+    color: #555F6D;
+    font-size: 17px;
+    font-family: 'NotoSansKR-400';
+}
+
+.pop_application_content_box .agree_terms > div:nth-child(2) label span {
+    color: #007CBD;
+}
+
+.pop_application_content_box .agree_terms > div:nth-child(2) button {
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    font-family: 'NotoSansKR-400';
+    font-size: 15px;
+    color:#9EA8B3 ;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.pop_application_content_box .agree_terms > div:nth-child(2) button:hover {
+    color: #555F6D;
+}
+
+
+.pop_application_content_box .submit_box {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px 0 0 0;
+}
+
+.pop_application_content_box .submit_box button {
+    appearance: none;
+    border: none;
+    background-color: #007CBD;
+    color: #fff;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 598px;
+    height: 40px;
+    font-size: 17px;
+    font-family: 'NotoSansKR-500';
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.pop_application_content_box .submit_box button:hover {
+    color: #fff !important;
+    background-color: #00466B !important;
 }

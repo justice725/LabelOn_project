@@ -78,7 +78,7 @@
             <div class="detail_time"> <!-- 작업시간 -->
                 <p>작업 시간</p>
                 <div>
-                    <input type="checkbox" name="" id="">
+                    <input type="checkbox" name="" id="" checked>
                     <label for="">종일</label>
                     <input type="checkbox" name="" id="">
                     <label for="">오전</label>
@@ -119,16 +119,16 @@
             <div class="detail_ai"> <!-- 2020년 ai 참여 여부 -->
                 <p>2020년 AI 참여 여부</p>
                 <div>
-                    <input type="radio" name="" id="">
+                    <input type="radio" name="ai_whether" id="" checked>
                     <label for="">유</label>
-                    <input type="radio" name="" id="">
+                    <input type="radio" name="ai_whether" id="">
                     <label for="">무</label>
                 </div>
             </div>
-            <div> <!-- 취약계층여부 -->
-                <p>취약계층여부</p>
+            <div class="detail_vulnerable"> <!-- 취약계층여부 -->
+                <p>취약계층 여부</p>
                 <div>
-                    <input type="checkbox" name="" id="">
+                    <input type="checkbox" name="" id="" checked>
                     <label for="">장애</label>
                     <input type="checkbox" name="" id="">
                     <label for="">임신/육아</label>
@@ -142,11 +142,11 @@
                     <label for="">초/중/고등학생</label>
                 </div>
             </div>
-            <div> <!-- 신청약관 -->
-                <div> <!-- title -->
-                    <span>신청약관</span>
+            <div class="detail_terms"> <!-- 신청약관 -->
+                <div class="tale_box"> <!-- title -->
+                    <span>신청 약관</span>
                 </div>
-                <div> <!-- 약관동의 -->
+                <div class="agree_terms"> <!-- 약관동의 -->
                     <div>
                         <input type="checkbox" name="" id="">
                         <label for="">모든 약관에 동의합니다.</label>
@@ -155,7 +155,7 @@
                         <div>
                             <div>
                                 <input type="checkbox" name="" id="">
-                            <label for="">프로젝트 신청 약관 및 동의합니다.<span>(필수)</span></label>
+                            <label for="">프로젝트 신청 약관 및 동의합니다. <span>(필수)</span></label>
                             </div>
                             <div>
                                 <button type="button">내용보기</button>
@@ -164,7 +164,7 @@
                         <div>
                             <div>
                                 <input type="checkbox" name="" id="">
-                            <label for="">프로젝트 신청 약관 및 동의합니다.<span>(필수)</span></label>
+                            <label for="">업무위탁 계약서에 동의합니다. <span>(필수)</span></label>
                             </div>
                             <div>
                                 <button type="button">내용보기</button>
@@ -173,7 +173,7 @@
                         <div>
                             <div>
                                 <input type="checkbox" name="" id="">
-                            <label for="">프로젝트 신청 약관 및 동의합니다.<span>(필수)</span></label>
+                            <label for="">개인 정보 수집 및 이용 동의합니다. <span>(필수)</span></label>
                             </div>
                             <div>
                                 <button type="button">내용보기</button>
@@ -182,7 +182,7 @@
                     </div>
                 </div>
             </div>
-            <div class=""> <!-- submit -->
+            <div class="submit_box"> <!-- submit -->
                 <button type="submit">신청</button>
             </div>
         </div>

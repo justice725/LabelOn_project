@@ -47,6 +47,11 @@ header .logo_box img {
     flex-direction: row-reverse;
 }
 
+.snb .user_account:hover {
+    color: #1B242C;
+    filter: opacity(0.7) drop-shadow(0 0 0 #1B242C);
+}
+
 .snb .user_account::after{
     content: "";
     display: inline-flex;
@@ -254,6 +259,10 @@ header .logo_box img {
     border: 1px solid #9ea8b3;
 }
 
+.content_info input[type=text]::placeholder {
+    color: #9EA8B3;
+}
+
 .content_detail {
     width: 100%;
     max-width: 1247px;
@@ -436,9 +445,15 @@ header .logo_box img {
     resize: none;
     font-family: 'NotoSansKR-400';
     color: #9EA8B3;
+    text-indent: 8px;
+    font-size: 15px;
 }
 .inner_content_box textarea:focus {
     border:1px solid #9EA8B3;
+}
+.inner_content_box textarea::placeholder {
+    color: #9EA8B3;
+    font-family: 'NotoSansKR-400';
 }
 
 
@@ -453,11 +468,19 @@ header .logo_box img {
     height: 32px;
     margin-bottom: 8px;
     border-radius: 4px;
+    font-family: 'NotoSansKR-400';
+    text-indent: 3px;
+    font-size: 15px;
 }
 
 .inner_content_box > div select:focus {
     outline: none;
     border:1px solid #9EA8B3;
+}
+
+.inner_content_box > div select::placeholder {
+    font-family: 'NotoSansKR-400';
+    color: #9EA8B3;
 }
 
 .inner_content_box > div input {
