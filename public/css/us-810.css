@@ -1,2 +1,74 @@
 @charset "utf-8";
 
+body {
+    width: 100%;
+    max-width: 1920px;
+    background-color: #1B242CB2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.pop_modal_application {
+    width: 100%;
+    max-width: 630px;
+    height: 1042px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #F0F3F5;
+    border-radius: 8px;
+}
+
+.pop_modal_application .pop_application_title_box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding: 8px;
+    
+}
+
+.pop_modal_application .pop_application_title_box p {
+    color: #1B242C;
+    font-size: 15px;
+}
+
+.pop_modal_application .pop_application_title_box button {
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    background: url(../images/icon/x-btn.png) no-repeat;
+    background-size: cover;
+    width: 24px;height: 24px;
+    cursor: pointer;
+}
+
+.pop_application_content_box {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    padding: 16px;
+}
+
+.pop_application_content_box > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"].readonly {
+    background-color: #F5F7F9;
+    cursor:auto;
+}

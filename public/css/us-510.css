@@ -364,7 +364,7 @@ body {
 
 .inner_content_box > div {
     width: 100%;
-    border-bottom: 1px solid #aaa;
+    border-bottom: 1px solid #F0F3F5;
     box-sizing: border-box;
     padding: 16px;
     display: flex;
@@ -387,7 +387,7 @@ body {
     추가적인 스타일링 및 수정 사항있을 시 변경 가능
 */
 
-.userable_edit div:nth-child(2) {
+.userable_edit div:nth-child(2):not(div.length_box) {
     width: 100%;
     max-width: 86%;
     display: flex;
@@ -608,6 +608,24 @@ body {
     box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.15);
 }
 
+.inner_content_box > div .user_set_box .length_box {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    right: 10px;
+    box-sizing: border-box;
+    height: 0;
+    top: -24px;
+}
+
+.inner_content_box > div .user_set_box .length_box p {
+    margin-bottom: 0 !important;
+    color: #9EA8B3;
+    font-size: 13px;
+}
+
 /* text TO QA modal 1 */
 
 
@@ -696,7 +714,7 @@ body {
 
 .sec_inner_content_box > div {
     width: 100%;
-    border-bottom: 1px solid #aaa;
+    border-bottom: 1px solid #F0F3F5;
     box-sizing: border-box;
     padding: 16px;
     display: flex;
@@ -852,6 +870,15 @@ body {
     line-height: 1.8;
 }
 
+.submit_box_wrap > div:first-child {
+    padding-bottom: 8px;
+    border-bottom: 1px solid #F0F3F5;
+}
+
+.submit_box_wrap > div:last-child {
+    padding-top: 8px;
+}
+
 .submit_box_wrap input[type=radio] {
     appearance: none;
     width: 16px;
@@ -929,6 +956,24 @@ body {
     border: 1px solid #007CBD;
     background-color: #fff;
     color: #007CBD;
+}
+
+.sec_inner_content_box > div .user_set_box .length_box {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    right: 10px;
+    box-sizing: border-box;
+    height: 0;
+    top: -24px;
+}
+
+.sec_inner_content_box > div .user_set_box .length_box p {
+    margin-bottom: 0 !important;
+    color: #9EA8B3;
+    font-size: 13px;
 }
 
 /* Text TO QA 2 */ 

@@ -362,7 +362,7 @@ header .logo_box img {
 
 .inner_content_box > div {
     width: 100%;
-    border-bottom: 1px solid #aaa;
+    border-bottom: 1px solid #F0F3F5;
     box-sizing: border-box;
     padding: 14px;
     display: flex;
@@ -513,6 +513,16 @@ p.fs_15 {
     align-items: center;
     font-size: 15px;
     line-height: 25.5px;
+    height: 26px;
+}
+
+.submit_box_wrap > div:first-child {
+    padding-bottom: 8px;
+    border-bottom: 1px solid #F0F3F5;
+}
+
+.submit_box_wrap > div:last-child {
+    padding-top: 8px;
 }
 
 .submit_box_wrap input[type=radio] {
@@ -612,4 +622,37 @@ p.fs_15 {
     background-color: #007CBD;
     color: #fff;
 }   
+
+
+.inner_content_box textarea {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #F0F3F5;
+    box-sizing: border-box;
+    padding: 8px 4px;
+    height: 64px;
+    resize: none;
+    font-family: 'NotoSansKR-R';
+    color: #9EA8B3;
+}
+
+.inner_content_box > div .user_set_box .length_box {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    right: 10px;
+    box-sizing: border-box;
+    height: 0;
+    top: -24px;
+}
+
+.inner_content_box > div .user_set_box .length_box p {
+    margin-bottom: 0 !important;
+    color: #9EA8B3;
+    font-size: 13px;
+}
+
 /* modal */
