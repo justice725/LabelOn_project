@@ -228,3 +228,24 @@ footer .copyright {
 }
 
 /* footer css */
+
+/* icon hover color css */
+
+.icon_color {
+
+}
+
+.icon_color:hover {
+    color: #1B242C;
+    filter: opacity(0.7) drop-shadow(0 0 0 #1B242C);
+}
+
+.button_color {
+    transition: all 0.2s;
+}
+
+.button_color:hover {
+    color: #fff !important;
+    background-color: #00466B !important;
+}
+/* icon hover color css */

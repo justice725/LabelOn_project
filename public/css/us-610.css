@@ -112,11 +112,12 @@ header .logo_box img {
     padding: 0;
     width: 100%;
     height: 100%;
+    color: #9EA8B3;
 }
 
 .sub-menu-curr {
     background: #ff805b;
-    color: #fff;
+    color: #fff !important;
     border-radius: 24px;
     font-weight: 500;
 }
@@ -364,7 +365,7 @@ header .logo_box img {
     width: 100%;
     border-bottom: 1px solid #F0F3F5;
     box-sizing: border-box;
-    padding: 14px;
+    padding: 16px 16px 15px 16px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -387,7 +388,7 @@ header .logo_box img {
 
 .userable_edit div:nth-child(2) {
     width: 100%;
-    max-width: 502px;
+    max-width: 494px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -600,7 +601,7 @@ p.fs_15 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 6px 0 0;
+    padding: 12px 0 0;
 }
 
 .submit_btn_box .submit_btn {
@@ -635,6 +636,10 @@ p.fs_15 {
     resize: none;
     font-family: 'NotoSansKR-R';
     color: #9EA8B3;
+}
+
+.inner_content_box textarea:focus {
+    border:1px solid #9EA8B3;
 }
 
 .inner_content_box > div .user_set_box .length_box {

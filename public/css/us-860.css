@@ -177,6 +177,7 @@ body {
 .pop_modal .pop_content_box .context_inner > p {
     position: relative;
     line-height: 1.8;
+    margin-left: 26px;
 }
 
 .pop_modal .pop_content_box .context_inner > p > span {
@@ -187,6 +188,9 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #F5F7F9;
+    position: absolute;
+    left: -26px;
+    top: 1px;
 }
 
 .pop_modal .pop_close_box {
