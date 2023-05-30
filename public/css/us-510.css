@@ -541,7 +541,7 @@ body {
     border-radius: 4px;
     color: #555F6D;
     box-sizing: border-box;
-    padding: 8px 8px 0 8px;
+    padding: 8px;
     height: 84px;
     display: flex;
     justify-content: space-between;
@@ -909,7 +909,7 @@ body {
     border-radius: 4px;
     color: #555F6D;
     box-sizing: border-box;
-    padding: 8px 8px 0 8px;
+    padding: 8px;
 }
 
 .submit_box_wrap > div {

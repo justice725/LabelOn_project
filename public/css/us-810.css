@@ -33,12 +33,13 @@ body {
     flex-direction: row;
     box-sizing: border-box;
     padding: 8px;
-    
+    border-bottom: 1px solid #F0F3F5;
 }
 
 .pop_modal_application .pop_application_title_box p {
     color: #1B242C;
     font-size: 15px;
+    font-family: 'NotoSansKR-M';
 }
 
 .pop_modal_application .pop_application_title_box button {
@@ -60,15 +61,188 @@ body {
     flex-wrap: nowrap;
     box-sizing: border-box;
     padding: 16px;
+    height: 786px;
 }
 
 .pop_application_content_box > div {
     width: 100%;
     display: flex;
     flex-direction: column;
+    padding-bottom: 16px;
+}
+
+.pop_application_content_box > div > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pop_application_content_box > div > div input.address_input {
+    width: 100%;
+    max-width: 438px;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 8px;
+    color: #555F6D;
+}
+
+.pop_application_content_box > div > div input.address_input::placeholder {
+    color: #555F6D;
+}
+
+.pop_application_content_box > div p {
+    margin-bottom: 4px;
+    font-size: 17px;
+    color: #1B242C;
+}
+
+.pop_application_content_box button.search_address {
+    appearance: none;
+    background-color: #007CBD;
+    width: 144px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 17px;
+    font-family: 'NotoSansKR-M';
 }
 
 input[type="text"].readonly {
     background-color: #F5F7F9;
-    cursor:auto;
+    cursor:default;
+    
+}
+
+input[readonly] {
+    cursor: default;
+    outline: transparent;
+    background-color: #F5F7F9;
+}
+
+input[readonly]:focus {
+    outline: none;
+    border: 1px solid transparent;
+}
+
+.pop_application_content_box .detail_address {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pop_application_content_box .detail_address > div {
+    width: 100%;
+    max-width: 291px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.pop_application_content_box .detail_address > div p {
+    color: #1B242C;
+}
+
+.pop_application_content_box .detail_address > div input {
+    width: 100%;
+    max-width: 291px;
+    height: 40px;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 8px;
+    color: #555F6D;
+}
+
+.pop_application_content_box .detail_age {
+    color: #555F6D;
+}
+
+.pop_application_content_box .detail_age > p {
+    margin-bottom: 15px;
+}
+
+.pop_application_content_box .detail_age > div {
+    justify-content: flex-start;
+}
+
+.pop_application_content_box .detail_age > div input {
+    margin: 3px 8px 0 0;
+}
+
+.pop_application_content_box .detail_age > div label {
+    margin-right: 11px;
+}
+
+.pop_application_content_box .detail_address > div input::placeholder {
+    color: #555F6D;
+}
+
+.pop_application_content_box .detail_address > div input.user_current {
+    color: #9EA8B3;
+}
+
+.pop_application_content_box .detail_address > div input.user_current::placeholder {
+    color: #9EA8B3;
+}
+
+.pop_application_content_box .detail_sex {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #555F6D;
+}
+
+.pop_application_content_box .detail_sex > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.pop_application_content_box .detail_sex > div p {
+    margin-bottom: 15px;
+}
+
+.pop_application_content_box .detail_sex > div input[type="radio"] {
+    margin: 3px 0 0 0;
+}
+
+.pop_application_content_box .detail_sex > div label {
+    margin-right: 11px;
+}
+
+.pop_application_content_box .detail_sex > div.flex_1 {
+    max-width: 120px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.pop_application_content_box .detail_sex > div.flex_1 > div > label:last-child {
+    margin: 0;
+}
+
+.pop_application_content_box .detail_sex > div.flex_2 {
+    max-width: 346px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.pop_application_content_box .detail_sex > div.flex_2 > div > label:last-child {
+    margin: 0;
+}
+
+.pop_application_content_box .detail_time {
+
+}
+
+.pop_application_content_box .detail_time p {
+    margin-bottom: 15px;
 }

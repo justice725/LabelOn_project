@@ -20,62 +20,62 @@
             <div> <!-- 우편번호 -->
                 <p>우편번호</p>
                 <div>
-                    <input type="text" name="" id="" class="readonly" readonly>
-                    <button type="button">우편번호 찾기</button>
+                    <input type="text" name="" id="" class="readonly address_input" readonly placeholder="Text">
+                    <button type="button" class="search_address">우편번호 찾기</button>
                 </div>
             </div>
-            <div> <!-- 주소 -->
+            <div class="detail_address"> <!-- 주소 -->
                 <div> <!-- 주소 입력 -->
                     <p>주소</p>
-                    <input type="text" name="" id="" class="readonly" readonly>
+                    <input type="text" name="" id="" class="readonly" readonly placeholder="Text">
                 </div>
                 <div> <!-- 상세주소 -->
                     <p>상세주소</p>
-                    <input type="text" name="" id="">
+                    <input type="text" name="" id="" placeholder="Text" class="user_current">
                 </div>
             </div>
-            <div> <!-- 연령 -->
+            <div class="detail_age"> <!-- 연령 -->
                 <p>연령</p>
                 <div>
-                    <input type="radio" name="" id="">
+                    <input type="radio" name="user_agre" id="" checked>
                     <label for="">10대</label>
-                    <input type="radio" name="" id="">
+                    <input type="radio" name="user_agre" id="">
                     <label for="">20대</label>
-                    <input type="radio" name="" id="">
+                    <input type="radio" name="user_agre" id="">
                     <label for="">30대</label>
-                    <input type="radio" name="" id="">
+                    <input type="radio" name="user_agre" id="">
                     <label for="">40대</label>
-                    <input type="radio" name="" id="">
+                    <input type="radio" name="user_agre" id="">
                     <label for="">50대</label>
-                    <input type="radio" name="" id="">
+                    <input type="radio" name="user_agre" id="">
                     <label for="">60대 이상</label>
                 </div>
             </div>
-            <div> <!-- 성별 -->
-                <div>   
+            <div class="detail_sex"> <!-- 성별 -->
+                <div class="flex_1">   
                     <p>성별</p>
                     <div>
-                        <input type="radio" name="" id="">
-                        <label for=""></label>
-                        <input type="radio" name="" id="">
-                        <label for=""></label>
+                        <input type="radio" name="user_sex" id="" checked>
+                        <label for="">남</label>
+                        <input type="radio" name="user_sex" id="">
+                        <label for="">여</label>
                     </div>
                 </div>
-                <div> <!-- 작업이유 -->
+                <div class="flex_2"> <!-- 작업이유 -->
                     <p>작업 이유</p>
                     <div>
-                        <input type="radio" name="" id="">
+                        <input type="radio" name="user_reason" id="" checked>
                         <label for="">생계형</label>
-                        <input type="radio" name="" id="">
+                        <input type="radio" name="user_reason" id="">
                         <label for="">부업형</label>
-                        <input type="radio" name="" id="">
+                        <input type="radio" name="user_reason" id="">
                         <label for="">사회공헌</label>
-                        <input type="radio" name="" id="">
+                        <input type="radio" name="user_reason" id="">
                         <label for="">여가시간</label>
                     </div>
                 </div>
             </div>
-            <div> <!-- 작업시간 -->
+            <div class="detail_time"> <!-- 작업시간 -->
                 <p>작업 시간</p>
                 <div>
                     <input type="checkbox" name="" id="">
