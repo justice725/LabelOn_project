@@ -27,8 +27,7 @@ body {
     border-radius: 4px;
     overflow: auto;
     background-color: #fff;
-    font-family: 'NotoSansKR-R';
-
+    font-family: 'NotoSansKR-400';
 }
 
 .sem_scrollbox {
@@ -201,14 +200,14 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    font-family: 'NotoSansKR-R';
+    font-family: 'NotoSansKR-400';
 }
 
 .sem_scrollbox textarea {
     width: 100%;
     border: 1px solid #f0f3f5;
     background-color: #fff;
-    font-family: 'NotoSansKR-R';
+    font-family: 'NotoSansKR-400';
     box-sizing: border-box;
     padding: 8px;
     resize: none;
@@ -488,7 +487,7 @@ body {
     padding: 8px 4px;
     height: 64px;
     resize: none;
-    font-family: 'NotoSansKR-R';
+    font-family: 'NotoSansKR-400';
     color: #9EA8B3;
 }
 
@@ -532,7 +531,7 @@ body {
 
 .submit_box p {
     font-size: 14px;
-    font-family: 'NotoSansKR-R';
+    font-family: 'NotoSansKR-400';
 }
 
 .submit_box_wrap {
@@ -613,7 +612,7 @@ body {
     padding: 6px 8px;
     resize: none;
     height: 20px;
-    font-family: 'NotoSansKR-R';
+    font-family: 'NotoSansKR-400';
 }
 
 .submit_btn_box {
@@ -857,7 +856,7 @@ body {
     padding: 8px 4px;
     height: 66px;
     resize: none;
-    font-family: 'NotoSansKR-R';
+    font-family: 'NotoSansKR-400';
     color: #9EA8B3;
 }
 
@@ -900,7 +899,7 @@ body {
 
 .submit_box p {
     font-size: 14px;
-    font-family: 'NotoSansKR-R';
+    font-family: 'NotoSansKR-400';
 }
 
 .submit_box_wrap {
@@ -986,7 +985,7 @@ body {
     padding: 6px 8px;
     resize: none;
     height: 20px;
-    font-family: 'NotoSansKR-R';
+    font-family: 'NotoSansKR-400';
 }
 
 .submit_btn_box {

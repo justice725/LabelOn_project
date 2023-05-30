@@ -48,8 +48,7 @@ body {
 
 .pop_title_box p {
     font-size: 17px;
-    font-weight: 500;
-    font-family: 'NotoSansKR-M';
+    font-family: "NotoSansKR-500";
 }
 
 .pop_title_box button {
@@ -113,14 +112,14 @@ body {
     background: #ff805b;
     color: #fff;
     border-radius: 24px;
-    font-weight: 500;
+    
 }
 
 .pop_modal .pop_modal_section_btn > ul > li > a.curr {
     background: #ff805b;
     color: #fff;
     border-radius: 24px;
-    font-weight: 500;
+    
 }
 
 .pop_modal .pop_content_box {
@@ -156,11 +155,9 @@ body {
     padding: 0 8px;
 }
 
-.pop_modal .pop_content_box .context_title h1 {
+ .pop_modal .pop_content_box .context_title p {
     font-size: 17px;
-    font-family: 'NotoSansKR-R';
-    font-weight: 500;
-    color: #1B242C;
+    font-family: "NotoSansKR-400";
 }
 
 .pop_modal .pop_content_box .context_inner {

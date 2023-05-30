@@ -39,7 +39,7 @@ body {
 .pop_modal_application .pop_application_title_box p {
     color: #1B242C;
     font-size: 15px;
-    font-family: 'NotoSansKR-M';
+    font-family: 'NotoSansKR-500';
 }
 
 .pop_modal_application .pop_application_title_box button {
@@ -85,10 +85,13 @@ body {
     box-sizing: border-box;
     padding: 8px;
     color: #555F6D;
+    font-family: 'NotoSansKR-R';
+    /* letter-spacing: 1px; */
 }
 
 .pop_application_content_box > div > div input.address_input::placeholder {
     color: #555F6D;
+    font-size: 15px;
 }
 
 .pop_application_content_box > div p {
@@ -107,7 +110,7 @@ body {
     border-radius: 4px;
     cursor: pointer;
     font-size: 17px;
-    font-family: 'NotoSansKR-M';
+    font-family: 'NotoSansKR-500';
 }
 
 input[type="text"].readonly {
@@ -156,6 +159,8 @@ input[readonly]:focus {
     box-sizing: border-box;
     padding: 8px;
     color: #555F6D;
+    font-family: 'NotoSansKR-400';
+    /* letter-spacing: 1px; */
 }
 
 .pop_application_content_box .detail_age {
@@ -180,6 +185,7 @@ input[readonly]:focus {
 
 .pop_application_content_box .detail_address > div input::placeholder {
     color: #555F6D;
+    font-size: 15px;
 }
 
 .pop_application_content_box .detail_address > div input.user_current {
@@ -245,4 +251,52 @@ input[readonly]:focus {
 
 .pop_application_content_box .detail_time p {
     margin-bottom: 15px;
+}
+
+.pop_application_content_box .detail_time > div {
+    justify-content: flex-start;
+}
+
+.pop_application_content_box .detail_time > div input {
+    margin-right: 8px;
+}
+
+.pop_application_content_box .detail_time > div label {
+    margin-right: 11px;
+}
+
+.pop_application_content_box .detail_through {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pop_application_content_box .detail_through > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 291px;
+}
+
+.pop_application_content_box .detail_through > div select {
+    width: 100%;
+    max-width: 291px;
+    height: 40px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'NotoSansKR-400';
+    font-size: 17px;
+    color: #9EA8B3;
+}
+
+.pop_application_content_box .detail_ai > div {
+    justify-content: flex-start;
+}
+
+.pop_application_content_box .detail_ai > div input {
+    margin: 3px 8px 0 0;
 }

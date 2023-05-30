@@ -1,12 +1,15 @@
 @charset "utf-8";
 
+@import url("../css/font.css");
+
+
 /* default css */
 html, body {
     width: 100%;
     overflow-x: hidden;
     padding: 0;
     margin: 0;
-    font-family: 'NotoSansKR-R';
+    font-family: 'NotoSansKR-400';
     margin: 0 auto;
 }
 
@@ -31,7 +34,7 @@ h1, h2, h3, h4, h5, h6, span, p {
     padding: 0;
     margin: 0;
     line-height: 1.6;
-    font-family: 'NotoSansKR-R';
+    font-family: "NotoSansKR-400";
 }
 
 /* input, textarea, selectbox, radio, checkbox css 초기화 */

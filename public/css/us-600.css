@@ -422,7 +422,7 @@ header .logo_box img {
 
 .inner_content_box > div .userable_edit p {
     font-size: 17px;
-    font-family: 'NotoSansKR-M';
+    font-family: 'NotoSansKR-500';
 }
 
 .inner_content_box textarea {
@@ -434,7 +434,7 @@ header .logo_box img {
     padding: 8px 4px;
     height: 64px;
     resize: none;
-    font-family: 'NotoSansKR-R';
+    font-family: 'NotoSansKR-400';
     color: #9EA8B3;
 }
 .inner_content_box textarea:focus {
