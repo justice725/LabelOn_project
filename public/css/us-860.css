@@ -106,6 +106,7 @@ body {
     height: 100%;
     font-size: 13px;
     color: #9EA8B3;
+    font-family: 'NotoSansKR-500';
 }
 
 .pop_modal .pop_modal_section_btn > ul > li > a:hover {
