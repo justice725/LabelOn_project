@@ -135,11 +135,11 @@ body {
 .pop_modal .pop_content_box > div {
     width: 100%;
     box-sizing: border-box;
-    padding: 0 8px 32px 8px;
+    padding: 0 8px 24px 8px;
 }
 
 .pop_modal .pop_content_box > div:nth-child(2) {
-    padding: 0 8px 40px 8px;
+    padding: 0 8px 24px 8px;
 }
 
 .pop_modal .pop_content_box .context_title {

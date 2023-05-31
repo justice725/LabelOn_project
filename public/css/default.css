@@ -232,7 +232,7 @@ footer .copyright {
 
 /* footer css */
 
-/* icon hover color css */
+/* icon hover color css guideline */
 
 .icon_color {
 
@@ -243,9 +243,9 @@ footer .copyright {
     filter: opacity(0.7) drop-shadow(0 0 0 #1B242C);
 }
 
-/* icon hover color css */
+/* icon hover color css guideline */
 
-/* button hover css  */
+/* button hover css guideline */
 
 .button_color {
     transition: all 0.2s;
@@ -256,4 +256,26 @@ footer .copyright {
     background-color: #00466B !important;
 }
 
-/* button hover css  */
+/* button hover css guideline */
+
+/* scrollbar guideline */
+
+.scrollbox::-webkit-scrollbar {
+    width: 4px;
+    background: #E9ECEF;
+    border-radius: 10px;
+}
+
+.scrollbox::-webkit-scrollbar-thumb{
+    width: 4px;
+    background: #9EA8B3;
+    border-radius: 10px;
+}
+
+.scrollbox::-webkit-scrollbar-track {
+    width: 4px;
+    background: #E9ECEF;
+    border-radius: 10px;
+}
+
+/* scrollbar guideline */

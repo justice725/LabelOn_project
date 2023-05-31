@@ -2,17 +2,655 @@
 
 /* body 임시 css html 이동 시 코드 삭제 */
 
-html, body {
+body {
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
-    background-color: #1B242CB2;
+    /* background-color: #1B242CB2; */
     height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    box-sizing: border-box;
+    padding: 0 20px !important;
 }
 
 /* body 임시 css html 이동 시 코드 삭제 */
 
+/* Keypoint1 */
+
+.keypoint_modal {
+    width: 400px;
+    max-width: 400px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 4px; 
+    box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+    overflow: auto;
+    background-color: #fff;
+    font-family: 'NotoSansKR-400';
+}
+
+.k_modal_box {
+    width: 100%;
+}
+
+.k_scroll_box {
+    max-width: 400px;
+    position: relative;
+    overflow-y: auto;
+    border: 1px solid #F0F3F5;
+    max-height: 745px;
+    min-height: 585px;
+}
+
+.k_title_box {
+    width: 100%;
+    max-width: 400px;
+    height: 42px;
+    background-color: #007CBD;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 8px 16px;
+    color: #fff;
+}
+
+.k_title_box p {
+    font-family: 'NotoSansKR-500';
+    font-size: 17px;
+}
+
+.k_arrow_box {
+    width: 24px;height: 24px;
+    background: url(../images/work/option-btn-right.png) no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.k_scroll_box > div {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.k_scroll_box > div .label {
+    width: 100%;
+    max-width: 368px;
+    height: 42px;
+    background-color: #F5F7F9;
+    border: 1px solid #E9ECEF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.k_scroll_box > div .label:hover {
+    background-color: #E9ECEF;
+    
+}
+
+.k_scroll_box > div .label label {
+    color: #555F6D;
+    font-size: 17px;
+    margin-left: 8px;
+}
+
+.k_scroll_box > div .label label span {
+    font-size: 13px;
+    color: #555F6D;
+}
+
+.k_scroll_box > div.submit_box {
+    padding-top: 12px;
+    border-bottom: none;
+}
+
+
+.label_icon_box {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.label_icon_box .icon_box {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.label_icon_box .view_icon {
+    background: url(../images/work/ctrl-btn-04.png) no-repeat;
+    background-size: cover;
+}
+
+.label_icon_box .view_icon:hover {
+    color: #1B242C;
+    filter: opacity(0.7) drop-shadow(0 0 0 #1B242C);
+    /* color: red; */
+    /* filter: opacity(0.5) drop-shadow(0 0 0 red); */
+}
+
+.label_icon_box .cursor_icon {
+    background-size: cover;
+    background: url(../images/work/mouse.png) no-repeat;
+}
+
+.label_icon_box .cursor_icon:hover {
+    color: #1B242C;
+    filter: opacity(0.7) drop-shadow(0 0 0 #1B242C);
+}
+
+.label_icon_box .bin_icon {
+    background-size: cover;
+    background: url(../images/work/trash.png) no-repeat;
+}
+
+.label_icon_box .bin_icon:hover {
+    color: #1B242C;
+    filter: opacity(0.7) drop-shadow(0 0 0 #1B242C);
+}
+
+.k_scroll_box .list_box {
+    width: 100%;
+    display: flex;
+    margin-top: 4px;
+    border-radius: 4px;
+    border: 1px solid #F0F3F5;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.k_scroll_box > div {
+    border-bottom: 1px solid #F0F3F5;
+}
+
+.k_scroll_box .list_box > div:nth-child(1) {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    padding: 8px;
+    border-bottom: 1px solid #F0F3F5;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.k_scroll_box .list_box > div:nth-child(1) p {
+    color: #1B242C;
+    font-size: 15px;
+
+}
+
+.k_scroll_box .list_box > div:nth-child(1) button {
+    width: 20px;height: 20px;
+    background: url(../images/work/ctrl-btn-13.png) no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    border: none;
+    appearance: none;
+}
+
+.k_scroll_box .list_box > div:nth-child(1) button:hover {
+    color: #1B242C;
+    filter: opacity(0.7) drop-shadow(0 0 0 #1B242C);
+}
+
+.k_scroll_box .list_box > div.roll_box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 194px;
+}
+
+.k_scroll_box .list_box > div.roll_box .list {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 4px 8px 4px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 34px;
+}
+
+.k_scroll_box .list_box > div.roll_box .list p {
+    color: #555F6D;
+    font-size: 15px;
+    position: relative;
+    text-indent: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.k_scroll_box .list_box > div.roll_box .list p span.num {
+    width: 20px; height: 20px;
+    display: inline-flex;
+    border-radius: 51%;
+    text-align: center;
+    justify-content: center;
+    background-color: #F5F7F9;
+    position: absolute;
+    top: 3px;
+    font-size: 13px;
+    left: 0;
+    align-items: center;
+    text-indent: 0;
+    color: #9EA8B3;
+}
+
+.k_scroll_box .list_box > div.roll_box .list p span.fs_13 {
+    font-size: 13px;
+    text-indent: 0;
+    text-align: center;
+}
+
+.k_scroll_box .list_box > div.roll_box .list .inner_icon {
+    width: 20px;height: 20px;
+    background: url(../images/work/ctrl-btn-02.png) no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.k_scroll_box .list_box > div.roll_box .list .inner_icon:hover {
+    color: #1B242C;
+    filter: opacity(0.7) drop-shadow(0 0 0 #1B242C);
+}
+
+.k_scroll_box > div .tag_box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.k_scroll_box > div .tag_box p {
+    margin-bottom: 4px;
+    color: #1B242C;
+    font-size: 15px;
+}
+
+.k_scroll_box > div .tag_box input[type="text"] {
+    height: 40px;
+    color: #9EA8B3;
+    font-size: 15px;
+    box-sizing: border-box;
+    padding: 7px 8px;
+}
+
+.k_scroll_box > div .tag_box input[type="text"]::placeholder {
+    color: #9EA8B3;
+    font-size: 15px;
+}
+
+.k_scroll_box > div.label_box {
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.k_scroll_box .label_box .label_inner_box {
+    width: 100%;
+    background-color: #F5F7F9;
+    box-sizing: border-box;
+    /* padding: 3px 8px 8px 8px; */
+    border-radius: 4px ;
+}
+
+.k_scroll_box .label_box .label_inner_box div {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    height: 42px;
+    box-sizing: border-box;
+    padding: 0 8px;
+}
+
+.k_scroll_box .label_box .label_inner_box div label {
+    color: #555F6D;
+    font-size: 15px;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.k_scroll_box .label_box .label_inner_box div p {
+    margin-right: 24px;
+}
+
+.k_scroll_box .label_box .label_inner_box div input {
+    margin: 3px 8px 0 0;
+}
+
+.k_scroll_box .label_box .label_inner_box div:nth-child(1) select {
+    width: 100%; max-width: 245px; height: 32px;
+    color: #9EA8B3;
+    font-size: 13px;
+    box-sizing: border-box;
+    /* padding: 6px 8px; */
+}
+
+.k_scroll_box .label_box .label_inner_box div:nth-child(1) {
+    border-bottom: 1px solid #F0F3F5;
+    height: 39px;
+}
+
+.k_scroll_box .label_box .label_inner_box div:nth-child(1) p {
+    margin-right: 12px;
+}
+
+.k_scroll_box .label_box .label_inner_box div p {
+    color: #555F6D;
+    font-size: 15px;
+}
+
+.k_scroll_box .label_box .label_inner_box div:nth-child(2) {
+    border-bottom: 1px solid #F0F3F5;
+}
+
+.k_scroll_box .submit_box {
+    width: 100%;
+}
+
+.k_scroll_box .submit_box button[type="submit"] {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #007CBD;
+    height: 40px;
+    color: #007CBD;
+    border-radius: 4px;
+    transition: all 0.2s;
+    font-size: 17px;
+    font-family: 'NotoSansKR-500';
+}
+
+.k_scroll_box .submit_box button[type="submit"]:hover {
+    color: #fff !important;
+    background-color: #00466B !important;
+}
+
+.list_rollup_btn {
+    transform: rotate(0deg);
+    transition: all 0.2s;
+}
+
+.list_rollup_btn.icon_change {
+    transform: rotate(180deg);
+}
+
+
+/* Keypoint1 */
+
+/* Keypoint2 */
+.keypoint_modal_2 {
+    width: 400px;
+    max-width: 400px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 4px; 
+    box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+    overflow: auto;
+    background-color: #fff;
+}
+
+.k_modal_box_2 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.k_scroll_box_2 {
+    overflow-y: auto;
+    width: 100%;
+    max-width: 398px;
+    border: 1px solid #F0F3F5;
+    position: relative;
+}
+
+.k_title_box {
+    width: 100%;
+    max-width: 400px;
+    height: 42px;
+    background-color: #007CBD;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 8px 16px;
+    color: #fff;
+}
+
+.k_title_box p {
+    font-family: 'NotoSansKR-500';
+    font-size: 17px;
+}
+
+.k_arrow_box {
+    width: 24px;height: 24px;
+    background: url(../images/work/option-btn-right.png) no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+
+.k_scroll_box_2 > div {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    border-bottom: 1px solid #F0F3F5;
+}
+
+.k_scroll_box_2 > div .label {
+    width: 100%;
+    max-width: 368px;
+    height: 42px;
+    background-color: #F5F7F9;
+    border: 1px solid #E9ECEF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.k_scroll_box_2 > div .label:hover {
+    background-color: #E9ECEF;
+    
+}
+
+.k_scroll_box_2 > div .label label {
+    color: #555F6D;
+    font-size: 17px;
+    margin-left: 8px;
+}
+
+.k_scroll_box_2 > div .label label span {
+    font-size: 13px;
+    color: #555F6D;
+}
+
+.k_scroll_box_2 > div.submit_box {
+    padding-top: 12px;
+    border-bottom: none;
+}
+
+
+.label_icon_box {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.label_icon_box .icon_box {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.label_icon_box .view_icon {
+    background: url(../images/work/ctrl-btn-04.png) no-repeat;
+    background-size: cover;
+}
+
+.label_icon_box .view_icon:hover {
+    color: #1B242C;
+    filter: opacity(0.7) drop-shadow(0 0 0 #1B242C);
+    /* color: red; */
+    /* filter: opacity(0.5) drop-shadow(0 0 0 red); */
+}
+
+.label_icon_box .cursor_icon {
+    background-size: cover;
+    background: url(../images/work/mouse.png) no-repeat;
+}
+
+.label_icon_box .cursor_icon:hover {
+    color: #1B242C;
+    filter: opacity(0.7) drop-shadow(0 0 0 #1B242C);
+}
+
+.label_icon_box .bin_icon {
+    background-size: cover;
+    background: url(../images/work/trash.png) no-repeat;
+}
+
+.label_icon_box .bin_icon:hover {
+    color: #1B242C;
+    filter: opacity(0.7) drop-shadow(0 0 0 #1B242C);
+}
+
+.k_scroll_box_2 .mb_16 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 12px 0;
+}
+
+.k_scroll_box_2 .mb_16 > div {
+    width: 100%;
+    max-width: 176px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #F0F3F5;
+    box-sizing: border-box;
+    padding: 7px 8px;
+    color: #555F6D;
+    border-radius: 4px;
+}
+
+.k_scroll_box_2 .tag_box {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.k_scroll_box_2 .tag_box p {
+    color: #1B242C;
+    margin-bottom: 4px;
+}
+
+.k_scroll_box_2 .tag_box input[type="text"] {
+    width: 100%;
+    max-width: 368px;
+    height: 40px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 7px 8px;
+    color: #9EA8B3;
+    font-size: 15px;
+}
+
+.k_scroll_box_2 .tag_box input[type="text"]::placeholder {
+    color: #9EA8B3;
+    font-size: 15px;
+}
+
+.k_scroll_box_2 > div.image_box_wrap {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.k_scroll_box_2 .image_box {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #F5F7F9;
+    border-radius: 4px;
+    height: 42px;
+    box-sizing: border-box;
+    padding: 8px;
+    color: #555F6D;
+}
+
+.k_scroll_box_2 .image_box p {
+    margin-right: 24px;
+}
+
+.k_scroll_box_2 .image_box input[type="radio"] {
+    margin: 3px 8px 0 0;
+}
+
+.k_scroll_box_2 .image_box label {
+    margin-right: 12px;
+    color: #555F6D;
+    cursor: pointer;
+}
+
+
+.k_scroll_box_2 .submit_box {
+    width: 100%;
+}
+
+.k_scroll_box_2 .submit_box button[type="submit"] {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #007CBD;
+    height: 40px;
+    color: #007CBD;
+    border-radius: 4px;
+    transition: all 0.2s;
+    font-size: 17px;
+    font-family: 'NotoSansKR-500';
+}
+
+.k_scroll_box_2 .submit_box button[type="submit"]:hover {
+    color: #fff !important;
+    background-color: #00466B !important;
+}
+/* Keypoint2 */
