@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+/* body 임시 css html 이동 시 코드 삭제 */
 body {
     width: 100%;
     max-width: 1920px;
@@ -11,7 +12,9 @@ body {
     margin: 0 auto;
     height: 100vh;
 }
+/* body 임시 css html 이동 시 코드 삭제 */
 
+/* 810 pop_modal */
 .pop_modal_application {
     width: 100%;
     max-width: 630px;
@@ -90,7 +93,6 @@ body {
     padding: 8px;
     color: #555F6D;
     font-family: 'NotoSansKR-R';
-    /* letter-spacing: 1px; */
 }
 
 .pop_application_content_box > div > div input.address_input::placeholder {
@@ -171,7 +173,6 @@ input[readonly]:focus {
     padding: 8px;
     color: #555F6D;
     font-family: 'NotoSansKR-400';
-    /* letter-spacing: 1px; */
 }
 
 .pop_application_content_box .detail_age {
@@ -518,3 +519,5 @@ input[readonly]:focus {
     color: #fff !important;
     background-color: #00466B !important;
 }
+
+/* 810 pop_modal */

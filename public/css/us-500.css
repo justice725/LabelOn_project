@@ -43,8 +43,8 @@ body {
     position: relative;
     overflow-y: auto;
     border: 1px solid #F0F3F5;
-    max-height: 745px;
-    min-height: 585px;
+    max-height: 779px;
+    min-height: 586px;
 }
 
 .k_title_box {
@@ -214,7 +214,7 @@ body {
 .k_scroll_box .list_box > div.roll_box {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: flex-start;
     flex-direction: column;
     height: 194px;
@@ -526,8 +526,6 @@ body {
 .label_icon_box .view_icon:hover {
     color: #1B242C;
     filter: opacity(0.7) drop-shadow(0 0 0 #1B242C);
-    /* color: red; */
-    /* filter: opacity(0.5) drop-shadow(0 0 0 red); */
 }
 
 .label_icon_box .cursor_icon {

@@ -1,11 +1,13 @@
 @charset "utf-8";
 
+/* body 임시 css html 이동 시 코드 삭제 */
 html, body {
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
     position: relative;
 }
+/* body 임시 css html 이동 시 코드 삭제 */
 
 /* us-600 header / className에 따라서 스타일이 변경될 수 있음, 모듈화 필요 */
 header {
@@ -64,7 +66,7 @@ header .logo_box img {
 
 /* us-600 header */
 
-/* section */
+/* 600 section */
 .page_check_box {
     width: 100%;
     max-width: 1920px;
@@ -289,9 +291,9 @@ header .logo_box img {
 .content_detail p span.green_rabel {
     background-color: #BDDCBD;
 }
-/* section */
+/* 600 section */
 
-/* modal */
+/* 600 modal */
 .modal {
     width: 600px;
     height: auto;
@@ -727,5 +729,5 @@ label {
 .text_count_box {
     height: 162px;
 }
-/* modal */
+/* 600 modal */
 
