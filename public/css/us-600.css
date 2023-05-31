@@ -597,7 +597,7 @@ header .logo_box img {
 
 .submit_box_wrap > div.disagree_select_box {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     height: 39px;
 }
@@ -611,6 +611,8 @@ header .logo_box img {
     padding: 4px 8px;
     border-radius: 4px;
     height: 32px;
+    font-size: 13px;
+    font-family: 'NotoSansKR-400';
 }
 
 .disagree_select_box select:focus{
@@ -632,11 +634,40 @@ header .logo_box img {
     height: 31px;
     padding: 0 8px;
     border-radius: 4px;
+    font-family: 'NotoSansKR-400';
+    font-size: 15px;
 }
 
 .submit_box_wrap > div.disagree_detail input:focus {
     outline: none;
     border:1px solid #9EA8B3;
+}
+
+.submit_box_wrap > div.disagree_detail input::placeholder {
+    font-family: 'NotoSansKR-400';
+    color: #9EA8B3;
+    text-indent: 3px;
+    font-size: 15px;
+}
+
+label {
+    font-family: 'NotoSansKR-400';
+    color: #555F6D;
+}
+
+.submit_box_wrap > div input {
+    margin :3px 8px 0px 0px;
+}
+
+.submit_box_wrap > div label {
+    margin-right: 16px;
+}
+
+.submit_box_wrap > div > p {
+    font-size: 15px;
+    font-family: 'NotoSansKR-400';
+    color: #555F6D;
+    margin-right: 24px;
 }
 
 .submit_btn_box {

@@ -600,6 +600,20 @@ body {
     line-height: 1.8;
 }
 
+.submit_box_wrap > div p {
+    margin-right: 24px;
+}
+
+.submit_box_wrap > div input {
+    margin: 3px 8px 0 0;
+}
+
+.submit_box_wrap > div label {
+    margin-right: 16px;
+    font-family: 'NotoSansKR-400';
+    font-size: 15px;
+}
+
 .submit_box_wrap input[type=radio] {
     appearance: none;
     width: 16px;
@@ -991,6 +1005,20 @@ body {
     color: #555F6D;
     box-sizing: border-box;
     padding: 8px;
+}
+
+.submit_box_wrap > div p {
+    margin-right: 24px;
+}
+
+.submit_box_wrap > div input {
+    margin: 3px 8px 0 0;
+}
+
+.submit_box_wrap > div label {
+    margin-right: 16px;
+    font-family: 'NotoSansKR-400';
+    font-size: 15px;
 }
 
 .submit_box_wrap > div {

@@ -229,7 +229,13 @@ input[readonly]:focus {
 }
 
 .pop_application_content_box .detail_sex > div input[type="radio"] {
-    margin: 3px 0 0 0;
+    margin: 3px 8px 0 0;
+}
+
+.detail_sex > div > div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .pop_application_content_box .detail_sex > div label {

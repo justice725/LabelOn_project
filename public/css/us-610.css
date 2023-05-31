@@ -563,6 +563,22 @@ p.fs_15 {
     height: 26px;
 }
 
+.submit_box_wrap > div p {
+    margin-right: 24px;
+    font-family: 'NotoSansKR-400';
+    font-size: 15px;
+}
+
+.submit_box_wrap > div input {
+    margin: 3px 8px 0px 0px;
+}
+
+.submit_box_wrap > div label {
+    margin-right: 16px;
+    font-family: 'NotoSansKR-400';
+    font-size: 15px;
+}
+
 .submit_box_wrap > div:first-child {
     padding-bottom: 8px;
     border-bottom: 1px solid #F0F3F5;
