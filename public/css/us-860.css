@@ -175,7 +175,7 @@ body {
 .pop_modal .pop_content_box .context_inner > p {
     position: relative;
     line-height: 1.8;
-    margin-left: 26px;
+    margin-left: 32px;
     font-size: 15px;
 }
 
@@ -188,7 +188,7 @@ body {
     align-items: center;
     background-color: #F5F7F9;
     position: absolute;
-    left: -26px;
+    left: -32px;
     top: 1px;
     font-size: 13px;
 }
