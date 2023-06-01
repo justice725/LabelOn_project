@@ -38,7 +38,7 @@
     appearance: none;
     border: none;
     background-color: transparent;
-    background: url(../images/icon/x-btn.png) no-repeat;
+    background: url(../../images/icon/x-btn.png) no-repeat;
     background-size: cover;
     width: 24px;height: 24px;
     cursor: pointer;

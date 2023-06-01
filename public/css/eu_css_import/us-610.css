@@ -13,6 +13,7 @@ header.header_610 {
     border-bottom: 1px solid #E9ECEF;
     box-sizing: border-box;
     padding: 0 20px;
+    background-color: #fff;
 }
 
 header.header_610:hover {

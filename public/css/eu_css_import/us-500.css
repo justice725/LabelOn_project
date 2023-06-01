@@ -398,7 +398,7 @@
     flex-direction: column;
     align-items: flex-start;
     border: 1px solid #F0F3F5;
-    padding: 8px;
+    padding: 8px 8px 0 8px;
     box-sizing: border-box;
 }
 
@@ -499,7 +499,7 @@
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    padding: 0 8px 16px 8px;
+    padding: 0 0 16px 0;
     justify-content: space-between;
 }
 
@@ -544,6 +544,7 @@
 
 .k_scroll_box_3 .wrap_inner > div.eu_inner_change {
     height: 39px;
+    border-bottom: 1px solid #F0F3F5;
 }
 
 .k_scroll_box_3 .wrap_inner > div.eu_inner_change select.eu_select {
@@ -553,6 +554,7 @@
 
 .k_scroll_box_3 .wrap_inner > div.eu_inner_status {
     height: 42px;
+    border-bottom: 1px solid #F0F3F5;
 }
 
 .k_scroll_box_3 .wrap_inner > div.eu_inner_status p {
@@ -575,6 +577,10 @@
     height: 38px;
 }
 
+.eu_inner_message {
+    border-bottom: none;
+}
+
 .k_scroll_box_3 > div.submit_box {
     justify-content: space-between;
     align-items: center;
@@ -585,6 +591,12 @@
 .k_scroll_box_3 > div.submit_box button.eu_button {
     max-width: 177px;
 }
+
+.k_scroll_box_3 > div.submit_box button.w_full {
+    width: 100%;
+    max-width: none;
+}
+
 
 /* 500 modal */
 
@@ -653,16 +665,16 @@
 
 /* icon css */
 
-.k_scroll_box_3.h_929 {
-    height: 929px;
+.k_scroll_box_3.h_913 {
+    height: 913px;
 }
 
-.k_scroll_box_3.h_890 {
-    height: 890px;
+.k_scroll_box_3.h_874 {
+    height: 874px;
 }
 
-.k_scroll_box_3.h_887 {
-    height: 887px;
+.k_scroll_box_3.h_859 {
+    height: 859px;
 }
 
 .title_box p {
