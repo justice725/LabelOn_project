@@ -1,23 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>us-510</title>
-    <link rel="stylesheet" href="../css/us-510.css?ver=20230530">
-    <link rel="stylesheet" href="../css/default.css">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="../css/eu_public.css">
+    <!-- css link -->
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="../js/us-510.js"></script>
     
 </head>
-<body>
+<body class="body_510">
 
     <!-- Sementic -->
     <section class="sem_modal">
         <div class="sem_modal_box">
-            <div class="sem_title_box">
-                <div class="sem_arrow_box"></div>
+            <div class="title_box">
+                <div class="arrow_box"></div>
                 <p>작업현황</p>
             </div>
             <div class="sem_scrollbox">
@@ -25,8 +27,8 @@
                     <div>
                         <div class="sem_label_box">
                             <div>
-                                <input type="checkbox" name="" id="">
-                                <label for="">1.라벨<span>(1)</span></label>
+                                <input type="checkbox" name="" id="" class="eu_input">
+                                <label class="eu_label" for="">1.라벨<span>(1)</span></label>
                             </div>
                             <div class="label_icon_box">
                                 <div class="view_icon icon_box"></div>
@@ -42,7 +44,7 @@
                     <div>
                         <div class="text_box">
                             <p>Tag</p>
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Text" maxlength="60"></textarea>
+                            <textarea class="eu_textarea" name="" id="" cols="30" rows="10" placeholder="Text" maxlength="60"></textarea>
                         </div>
                     </div>
                 </div>
@@ -50,8 +52,8 @@
                     <div>
                         <div class="sem_label_box">
                             <div>
-                                <input type="checkbox" name="" id="">
-                            <label for="">1.라벨<span>(1)</span></label>
+                                <input type="checkbox" name="" id="" class="eu_input">
+                            <label class="eu_label" for="">1.라벨<span>(1)</span></label>
                             </div>
                             <div class="label_icon_box">
                                 <div class="view_icon icon_box"></div>
@@ -67,7 +69,7 @@
                     <div>
                         <div class="text_box">
                             <p>Tag</p>
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Text" maxlength="60"></textarea>
+                            <textarea class="eu_textarea" name="" id="" cols="30" rows="10" placeholder="Text" maxlength="60"></textarea>
                         </div>
                     </div>
                 </div>
@@ -75,8 +77,8 @@
                     <div>
                         <div class="sem_label_box">
                             <div>
-                                <input type="checkbox" name="" id="">
-                            <label for="">1.라벨<span>(1)</span></label>
+                                <input type="checkbox" name="" id="" class="eu_input">
+                            <label class="eu_label" for="">1.라벨<span>(1)</span></label>
                             </div>
                             <div class="label_icon_box">
                                 <div class="view_icon icon_box"></div>
@@ -92,20 +94,20 @@
                     <div>
                         <div class="text_box">
                             <p>Tag</p>
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Text" maxlength="60"></textarea>
+                            <textarea class="eu_textarea" name="" id="" cols="30" rows="10" placeholder="Text" maxlength="60"></textarea>
                         </div>
                     </div>
                 </div>
                 <div>
                     <div class="sem_radio_box">
                         <p>이미지 작업 가능여부</p>
-                        <input type="radio" name="image_agree" id="" checked>
-                        <label for="">가능</label>
-                        <input type="radio" name="image_agree" id="">
-                        <label for="">불가능</label>
+                        <input type="radio" name="image_agree" id="" checked class="eu_input">
+                        <label class="eu_label" for="">가능</label>
+                        <input type="radio" name="image_agree" id="" class="eu_input">
+                        <label class="eu_label" for="">불가능</label>
                     </div>
                     <div>
-                        <button type="submit">제출</button>
+                        <button class="eu_button" type="submit">제출</button>
                     </div>
                 </div>
             </div>
@@ -121,26 +123,26 @@
                 <div class="arrow_box"></div>
                 <p>작업현황</p>
             </div>
-            <div class="scrollbox">
-                <div class="inner_content_box">
+            <div class="toqa_1_scrollbox">
+                <div class="inner_content_box eu_ht_489">
                         <div class="text_count_box">
                             <div class="userable_edit">
                                 <div class="number_box">
                                     <p>1. 질문</p>
                                 </div>
                                 <div class="user_set_box">
-                                    <select name="" id="">
+                                    <select name="" id="" class="eu_select">
                                         <option value="">Text</option>
                                         <option value="">Text</option>
                                         <option value="">Text</option>
                                         <option value="">Text</option>
                                     </select>
-                                    <textarea name="" id="" cols="10" rows="6" placeholder="기본질문 - 지문 내 어휘를 활용하여 간결한 질문 작성" maxlength="60"></textarea>
+                                    <textarea class="eu_textarea" name="" id="" cols="10" rows="6" placeholder="기본질문 - 지문 내 어휘를 활용하여 간결한 질문 작성" maxlength="60"></textarea>
                                     <div class="length_box">
                                         <p class="text_count">(0</p>
                                         <p class="text_total">/60)</p>
                                     </div>
-                                    <button type="button" class="yellow_rabel_btn rabel_circle">A</button>
+                                    <button type="button" class="yellow_rabel_btn rabel_circle eu_button">A</button>
                                 </div>
                             </div>
                         </div>
@@ -150,18 +152,18 @@
                                     <p>2. 질문</p>
                                 </div>
                                 <div class="user_set_box">
-                                    <select name="" id="">
+                                    <select name="" id="" class="eu_select">
                                         <option value="">Text</option>
                                         <option value="">Text</option>
                                         <option value="">Text</option>
                                         <option value="">Text</option>
                                     </select>
-                                    <textarea name="" id="" cols="10" rows="6" placeholder="기본질문 - 지문 내 어휘를 활용하여 간결한 질문 작성" maxlength="60"></textarea>
+                                    <textarea class="eu_textarea" name="" id="" cols="10" rows="6" placeholder="기본질문 - 지문 내 어휘를 활용하여 간결한 질문 작성" maxlength="60"></textarea>
                                     <div class="length_box">
                                         <p class="text_count">(0</p>
                                         <p class="text_total">/60)</p>
                                     </div>
-                                    <button type="button" class="green_rabel_btn rabel_circle">A</button>
+                                    <button type="button" class="green_rabel_btn rabel_circle eu_button">A</button>
                                 </div>
                             </div>
                         </div>
@@ -171,18 +173,18 @@
                                     <p>3. 질문</p>
                                 </div>
                                 <div class="user_set_box">
-                                    <select name="" id="">
+                                    <select name="" id="" class="eu_select">
                                         <option value="">Text</option>
                                         <option value="">Text</option>
                                         <option value="">Text</option>
                                         <option value="">Text</option>
                                     </select>
-                                    <textarea name="" id="" cols="10" rows="6" placeholder="기본질문 - 지문 내 어휘를 활용하여 간결한 질문 작성" maxlength="60"></textarea>
+                                    <textarea class="eu_textarea" name="" id="" cols="10" rows="6" placeholder="기본질문 - 지문 내 어휘를 활용하여 간결한 질문 작성" maxlength="60"></textarea>
                                     <div class="length_box">
                                         <p class="text_count">(0</p>
                                         <p class="text_total">/60)</p>
                                     </div>
-                                    <button type="button" class="red_rabel_btn rabel_circle">A</button>
+                                    <button type="button" class="red_rabel_btn rabel_circle eu_button">A</button>
                                 </div>
                             </div>
                         </div>
@@ -191,17 +193,17 @@
                     <div class="submit_box_wrap">
                         <div>
                             <p>지문 작업 가능여부</p>
-                            <input type="radio" name="checked3" id="checked1_agree" checked><label for="checked1_agree">가능</label>
-                            <input type="radio" name="checked3" id="checked1_disagree"><label for="checked1_disagree">불가능</label>
+                            <input type="radio" class="eu_input" name="checked3" id="checked1_agree" checked><label class="eu_label" for="checked1_agree">가능</label>
+                            <input type="radio" class="eu_input" name="checked3" id="checked1_disagree"><label class="eu_label" for="checked1_disagree">불가능</label>
                         </div>
                         <div>
                             <p>지문에 대한 '답변-질문' 세트 추가</p>
-                            <input type="radio" name="checked4" id="checked2_agree" checked><label for="checked2_agree">가능</label>
-                            <input type="radio" name="checked4" id="checked2_disagree"><label for="checked2_disagree">불가능</label>
+                            <input type="radio" class="eu_input" name="checked4" id="checked2_agree" checked><label class="eu_label" for="checked2_agree">가능</label>
+                            <input type="radio" class="eu_input" name="checked4" id="checked2_disagree"><label class="eu_label" for="checked2_disagree">불가능</label>
                         </div>
                     </div>
                     <div class="submit_btn_box">
-                        <button class="">제출</button>
+                        <button class="eu_button" class="">제출</button>
                     </div>
                 </div>
             </div>
@@ -214,8 +216,8 @@
     <!-- Text TO QA 2 -->
     <section class="sec_modal">
         <div class="sec_modal_box">
-            <div class="sec_title_box">
-                <div class="sec_arrow_box"></div>
+            <div class="title_box">
+                <div class="arrow_box"></div>
                 <p>작업현황</p>
             </div>
             <div class="sec_scrollbox">
@@ -226,12 +228,12 @@
                                 <p>1. 질문</p>
                             </div>
                             <div class="user_set_box">
-                                <textarea name="" id="" cols="10" rows="6" placeholder="기본질문 - 지문 내 어휘를 활용하여 간결한 질문 작성" maxlength="60"></textarea>
+                                <textarea class="eu_textarea" name="" id="" cols="10" rows="6" placeholder="기본질문 - 지문 내 어휘를 활용하여 간결한 질문 작성" maxlength="60"></textarea>
                                 <div class="length_box">
                                     <p class="text_count">(0</p>
                                     <p class="text_total">/60)</p>
                                 </div>
-                                <button type="button" class="yellow_rabel_btn rabel_circle">A</button>
+                                <button type="button" class="yellow_rabel_btn rabel_circle eu_button">A</button>
                             </div>
                         </div>
                     </div>
@@ -241,12 +243,12 @@
                                 <p>2. 질문</p>
                             </div>
                             <div class="user_set_box">
-                                <textarea name="" id="" cols="10" rows="6" placeholder="기본질문 - 지문 내 어휘를 활용하여 간결한 질문 작성"  maxlength="60"></textarea>
+                                <textarea class="eu_textarea" name="" id="" cols="10" rows="6" placeholder="기본질문 - 지문 내 어휘를 활용하여 간결한 질문 작성"  maxlength="60"></textarea>
                                 <div class="length_box">
                                     <p class="text_count">(0</p>
                                     <p class="text_total">/60)</p>
                                 </div>
-                                <button type="button" class="green_rabel_btn rabel_circle">A</button>
+                                <button type="button" class="green_rabel_btn rabel_circle eu_button">A</button>
                             </div>
                         </div>
                     </div>
@@ -256,12 +258,12 @@
                                 <p>3. 질문</p>
                             </div>
                             <div class="user_set_box">
-                                <textarea name="" id="" cols="10" rows="6" placeholder="기본질문 - 지문 내 어휘를 활용하여 간결한 질문 작성"  maxlength="60"></textarea>
+                                <textarea class="eu_textarea" name="" id="" cols="10" rows="6" placeholder="기본질문 - 지문 내 어휘를 활용하여 간결한 질문 작성"  maxlength="60"></textarea>
                                 <div class="length_box">
                                     <p class="text_count">(0</p>
                                     <p class="text_total">/60)</p>
                                 </div>
-                                <button type="button" class="red_rabel_btn rabel_circle">A</button>
+                                <button type="button" class="red_rabel_btn rabel_circle eu_button">A</button>
                             </div>
                         </div>
                     </div>
@@ -271,12 +273,12 @@
                                 <p>4. 질문</p>
                             </div>
                             <div class="user_set_box">
-                                <textarea name="" id="" cols="10" rows="6" placeholder="기본질문 - 지문 내 어휘를 활용하여 간결한 질문 작성"  maxlength="60"></textarea>
+                                <textarea class="eu_textarea" name="" id="" cols="10" rows="6" placeholder="기본질문 - 지문 내 어휘를 활용하여 간결한 질문 작성"  maxlength="60"></textarea>
                                 <div class="length_box">
                                     <p class="text_count">(0</p>
                                     <p class="text_total">/60)</p>
                                 </div>
-                                <button type="button" class="blue_rabel_btn rabel_circle">A</button>
+                                <button type="button" class="blue_rabel_btn rabel_circle eu_button">A</button>
                             </div>
                         </div>
                     </div>
@@ -285,17 +287,17 @@
                     <div class="submit_box_wrap">
                         <div>
                             <p>지문 작업 가능여부</p>
-                            <input type="radio" name="checked1" id="checked1_agree" checked><label for="checked1_agree">가능</label>
-                            <input type="radio" name="checked1" id="checked1_disagree"><label for="checked1_disagree">불가능</label>
+                            <input type="radio" class="eu_input" name="checked1" id="checked1_agree" checked><label class="eu_label" for="checked1_agree">가능</label>
+                            <input type="radio" class="eu_input" name="checked1" id="checked1_disagree"><label class="eu_label" for="checked1_disagree">불가능</label>
                         </div>
                         <div>
                             <p>지문에 대한 '답변-질문' 세트 추가</p>
-                            <input type="radio" name="checked2" id="checked2_agree" checked><label for="checked2_agree">가능</label>
-                            <input type="radio" name="checked2" id="checked2_disagree"><label for="checked2_disagree">불가능</label>
+                            <input type="radio" class="eu_input" name="checked2" id="checked2_agree" checked><label class="eu_label" for="checked2_agree">가능</label>
+                            <input type="radio" class="eu_input" name="checked2" id="checked2_disagree"><label class="eu_label" for="checked2_disagree">불가능</label>
                         </div>
                     </div>
                     <div class="submit_btn_box">
-                        <button class="">제출</button>
+                        <button class="eu_button" type="submit">제출</button>
                     </div>
                 </div>
             </div>

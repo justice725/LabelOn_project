@@ -1,105 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>us-810</title>
-    <link rel="stylesheet" href="../css/default.css">
-    <link rel="stylesheet" href="../css/us-810.css?ver=20230530">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="../css/eu_public.css">
+    <!-- css link -->
 </head>
 <body>
     <!-- 810 pop_modal -->
     <div class="pop_modal_application">
         <div class="pop_application_title_box">
             <p>작업신청서</p>
-            <button type="button"></button>
+            <button type="button"  class="eu_button"></button>
         </div>
         
         <div class="pop_application_content_box pop_section_1"> <!-- component 1 -->
             <div> <!-- 우편번호 -->
                 <p>우편번호</p>
                 <div>
-                    <input type="text" name="" id="" class="readonly address_input" readonly placeholder="Text">
-                    <button type="button" class="search_address">우편번호 찾기</button>
+                    <input type="text" name="" id="" class="readonly address_input eu_input" readonly placeholder="Text">
+                    <button type="button" class="search_address eu_button">우편번호 찾기</button>
                 </div>
             </div>
             <div class="detail_address"> <!-- 주소 -->
                 <div> <!-- 주소 입력 -->
                     <p>주소</p>
-                    <input type="text" name="" id="" class="readonly" readonly placeholder="Text">
+                    <input type="text" name="" id="" class="readonly eu_input" readonly placeholder="Text">
                 </div>
                 <div> <!-- 상세주소 -->
                     <p>상세주소</p>
-                    <input type="text" name="" id="" placeholder="Text" class="user_current">
+                    <input type="text" name="" id="" placeholder="Text" class="user_current eu_input">
                 </div>
             </div>
             <div class="detail_age"> <!-- 연령 -->
                 <p>연령</p>
                 <div>
-                    <input type="radio" name="user_agre" id="" checked>
-                    <label for="">10대</label>
-                    <input type="radio" name="user_agre" id="">
-                    <label for="">20대</label>
-                    <input type="radio" name="user_agre" id="">
-                    <label for="">30대</label>
-                    <input type="radio" name="user_agre" id="">
-                    <label for="">40대</label>
-                    <input type="radio" name="user_agre" id="">
-                    <label for="">50대</label>
-                    <input type="radio" name="user_agre" id="">
-                    <label for="">60대 이상</label>
+                    <input type="radio" name="user_agre" id="" checked class="eu_input">
+                    <label for="" class="eu_label">10대</label>
+                    <input type="radio" name="user_agre" id="" class="eu_input">
+                    <label for="" class="eu_label">20대</label>
+                    <input type="radio" name="user_agre" id="" class="eu_input">
+                    <label for="" class="eu_label">30대</label>
+                    <input type="radio" name="user_agre" id="" class="eu_input">
+                    <label for="" class="eu_label">40대</label>
+                    <input type="radio" name="user_agre" id="" class="eu_input">
+                    <label for="" class="eu_label">50대</label>
+                    <input type="radio" name="user_agre" id="" class="eu_input">
+                    <label for="" class="eu_label">60대 이상</label>
                 </div>
             </div>
             <div class="detail_sex"> <!-- 성별 -->
                 <div class="flex_1">   
                     <p>성별</p>
                     <div>
-                        <input type="radio" name="user_sex" id="" checked>
-                        <label for="">남</label>
-                        <input type="radio" name="user_sex" id="">
-                        <label for="">여</label>
+                        <input type="radio" name="user_sex" id="" checked class="eu_input">
+                        <label for="" class="eu_label">남</label>
+                        <input type="radio" name="user_sex" id="" class="eu_input">
+                        <label for="" class="eu_label">여</label>
                     </div>
                 </div>
                 <div class="flex_2"> <!-- 작업이유 -->
                     <p>작업 이유</p>
                     <div>
-                        <input type="radio" name="user_reason" id="" checked>
-                        <label for="">생계형</label>
-                        <input type="radio" name="user_reason" id="">
-                        <label for="">부업형</label>
-                        <input type="radio" name="user_reason" id="">
-                        <label for="">사회공헌</label>
-                        <input type="radio" name="user_reason" id="">
-                        <label for="">여가시간</label>
+                        <input type="radio" name="user_reason" id="" checked class="eu_input">
+                        <label for="" class="eu_label">생계형</label>
+                        <input type="radio" name="user_reason" id="" class="eu_input">
+                        <label for="" class="eu_label">부업형</label>
+                        <input type="radio" name="user_reason" id="" class="eu_input">
+                        <label for="" class="eu_label">사회공헌</label>
+                        <input type="radio" name="user_reason" id="" class="eu_input">
+                        <label for="" class="eu_label">여가시간</label>
                     </div>
                 </div>
             </div>
             <div class="detail_time"> <!-- 작업시간 -->
                 <p>작업 시간</p>
                 <div>
-                    <input type="checkbox" name="" id="" checked>
-                    <label for="">종일</label>
-                    <input type="checkbox" name="" id="">
-                    <label for="">오전</label>
-                    <input type="checkbox" name="" id="">
-                    <label for="">오후</label>
-                    <input type="checkbox" name="" id="">
-                    <label for="">야간</label>
-                    <input type="checkbox" name="" id="">
-                    <label for="">새벽</label>
-                    <input type="checkbox" name="" id="">
-                    <label for="">주중</label>
-                    <input type="checkbox" name="" id="">
-                    <label for="">토요일</label>
-                    <input type="checkbox" name="" id="">
-                    <label for="">일요일</label>
+                    <input type="checkbox" name="" id="" checked class="eu_input">
+                    <label for="" class="eu_label">종일</label>
+                    <input type="checkbox" name="" id="" class="eu_input">
+                    <label for="" class="eu_label">오전</label>
+                    <input type="checkbox" name="" id="" class="eu_input">
+                    <label for="" class="eu_label">오후</label>
+                    <input type="checkbox" name="" id="" class="eu_input">
+                    <label for="" class="eu_label">야간</label>
+                    <input type="checkbox" name="" id="" class="eu_input">
+                    <label for="" class="eu_label">새벽</label>
+                    <input type="checkbox" name="" id="" class="eu_input">
+                    <label for="" class="eu_label">주중</label>
+                    <input type="checkbox" name="" id="" class="eu_input">
+                    <label for="" class="eu_label">토요일</label>
+                    <input type="checkbox" name="" id="" class="eu_input">
+                    <label for="" class="eu_label">일요일</label>
                 </div>
             </div>
             <div class="detail_through"> <!-- 가입경로 -->
                 <div>
                     <p>가입경로</p>
-                    <select name="" id="">
+                    <select name="" id="" class="eu_select">
                         <option value="">Select</option>
                         <option value="">Select</option>
                         <option value="">Select</option>
@@ -108,7 +110,7 @@
                 </div>
                 <div> <!-- 직업종류 -->
                     <p>직업종류</p>
-                    <select name="" id="">
+                    <select name="" id="" class="eu_select">
                         <option value="">Select</option>
                         <option value="">Select</option>
                         <option value="">Select</option>
@@ -119,27 +121,27 @@
             <div class="detail_ai"> <!-- 2020년 ai 참여 여부 -->
                 <p>2020년 AI 참여 여부</p>
                 <div>
-                    <input type="radio" name="ai_whether" id="" checked>
-                    <label for="">유</label>
-                    <input type="radio" name="ai_whether" id="">
-                    <label for="">무</label>
+                    <input type="radio" name="ai_whether" id="" checked class="eu_input">
+                    <label for="" class="eu_label">유</label>
+                    <input type="radio" name="ai_whether" id="" class="eu_input">
+                    <label for="" class="eu_label">무</label>
                 </div>
             </div>
             <div class="detail_vulnerable"> <!-- 취약계층여부 -->
                 <p>취약계층 여부</p>
                 <div>
-                    <input type="checkbox" name="" id="" checked>
-                    <label for="">장애</label>
-                    <input type="checkbox" name="" id="">
-                    <label for="">임신/육아</label>
-                    <input type="checkbox" name="" id="">
-                    <label for="">경력단절여성</label>
-                    <input type="checkbox" name="" id="">
-                    <label for="">보훈</label>
-                    <input type="checkbox" name="" id="">
-                    <label for="">다문화가정</label>
-                    <input type="checkbox" name="" id="">
-                    <label for="">초/중/고등학생</label>
+                    <input type="checkbox" name="" id="" checked class="eu_input">
+                    <label for="" class="eu_label">장애</label>
+                    <input type="checkbox" name="" id="" class="eu_input">
+                    <label for="" class="eu_label">임신/육아</label>
+                    <input type="checkbox" name="" id="" class="eu_input">
+                    <label for="" class="eu_label">경력단절여성</label>
+                    <input type="checkbox" name="" id="" class="eu_input">
+                    <label for="" class="eu_label">보훈</label>
+                    <input type="checkbox" name="" id="" class="eu_input">
+                    <label for="" class="eu_label">다문화가정</label>
+                    <input type="checkbox" name="" id="" class="eu_input">
+                    <label for="" class="eu_label">초/중/고등학생</label>
                 </div>
             </div>
             <div class="detail_terms"> <!-- 신청약관 -->
@@ -148,42 +150,42 @@
                 </div>
                 <div class="agree_terms"> <!-- 약관동의 -->
                     <div>
-                        <input type="checkbox" name="" id="">
-                        <label for="">모든 약관에 동의합니다.</label>
+                        <input type="checkbox" name="" id="" class="eu_input">
+                        <label for="" class="eu_label">모든 약관에 동의합니다.</label>
                     </div>
                     <div>
                         <div>
                             <div>
-                                <input type="checkbox" name="" id="">
-                            <label for="">프로젝트 신청 약관 및 동의합니다. <span>(필수)</span></label>
+                                <input type="checkbox" name="" id="" class="eu_input">
+                            <label for="" class="eu_label">프로젝트 신청 약관 및 동의합니다. <span>(필수)</span></label>
                             </div>
                             <div>
-                                <button type="button">내용보기</button>
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                                <input type="checkbox" name="" id="">
-                            <label for="">업무위탁 계약서에 동의합니다. <span>(필수)</span></label>
-                            </div>
-                            <div>
-                                <button type="button">내용보기</button>
+                                <button type="button" class="eu_button">내용보기</button>
                             </div>
                         </div>
                         <div>
                             <div>
-                                <input type="checkbox" name="" id="">
-                            <label for="">개인 정보 수집 및 이용 동의합니다. <span>(필수)</span></label>
+                                <input type="checkbox" name="" id="" class="eu_input">
+                            <label for="" class="eu_label">업무위탁 계약서에 동의합니다. <span>(필수)</span></label>
                             </div>
                             <div>
-                                <button type="button">내용보기</button>
+                                <button type="button" class="eu_button">내용보기</button>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <input type="checkbox" name="" id="" class="eu_input">
+                            <label for="" class="eu_label">개인 정보 수집 및 이용 동의합니다. <span>(필수)</span></label>
+                            </div>
+                            <div>
+                                <button type="button" class="eu_button">내용보기</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="submit_box"> <!-- submit -->
-                <button type="submit">신청</button>
+                <button type="submit" class="eu_button">신청</button>
             </div>
         </div>
     </div>

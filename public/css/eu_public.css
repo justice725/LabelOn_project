@@ -1,6 +1,15 @@
 @charset "utf-8";
 
-@import url("../css/font.css");
+/* 폰트 */
+@import url("./eu_css_import/font.css");
+/* 폰트 */
+@import url("./eu_css_import/us-500.css");
+@import url("./eu_css_import/us-510.css");
+@import url("./eu_css_import/us-600.css");
+@import url("./eu_css_import/us-610.css");
+@import url("./eu_css_import/us-810.css");
+@import url("./eu_css_import/us-820.css");
+@import url("./eu_css_import/us-860.css");
 
 
 /* default css */
@@ -12,13 +21,14 @@ html, body {
     margin: 0;
     font-family: 'NotoSansKR-400';
     margin: 0 auto;
-}
+    position: relative;
+} /* 충돌 생길 수 있는 부분 마킹 */
 
 .page_wrap {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-}
+} 
 
 ul {
     list-style: none;
@@ -39,19 +49,42 @@ h1, h2, h3, h4, h5, h6, span, p {
 }
 
 /* input, textarea, selectbox, radio, checkbox css 초기화 */
-input[type="text"], textarea, select, input {
+textarea.eu_textarea, select.eu_select, input.eu_input {
     background-color: #fff;
     border-radius: 4px;
     border: 1px solid #F0F3F5;
+    resize: none;
 }
 
-input[type="text"]:focus, textarea:focus, select:focus, input:focus {
+textarea.eu_textarea {
+    box-sizing: border-box;
+    padding: 8px 4px;
+    text-indent: 4px;
+}
+
+select.eu_select {
+    text-indent: 3px;
+    font-family: "NotoSansKR-400";
+}
+
+
+select.eu_select:focus {
+    outline: none;
+    border:1px solid #9EA8B3;
+}
+
+select.eu_select::placeholder {
+    font-family: 'NotoSansKR-400';
+    color: #9EA8B3;
+}
+
+input[type="text"].eu_input:focus, textarea.eu_textarea:focus, select.eu_select:focus, input.eu_input:focus {
     outline: none;
     background-color: #fff;
     border: 1px solid #9EA8B3;
 }
 
-input[type="radio"] {
+input[type="radio"].eu_input {
     appearance: none;
     background-color: #fff;
     border-radius: 51%;
@@ -62,17 +95,17 @@ input[type="radio"] {
     cursor: pointer;
 }
 
-input[type="radio"]:focus {
+input[type="radio"].eu_input:focus {
     outline: none;
     border:1px solid #9EA8B3;
 }
 
-input[type="radio"]:checked {
+input[type="radio"].eu_input:checked {
     border: 1px solid #E9ECEF;
     background-color: #fff;
 }
 
-input[type="radio"]:checked::after{
+input[type="radio"].eu_input:checked::after{
     content: "";
     position: absolute;
     top: calc(50% - 4px);
@@ -82,7 +115,7 @@ input[type="radio"]:checked::after{
     width: 8px;height: 8px;
 }
 
-input[type="checkbox"] {
+input[type="checkbox"].eu_input {
     appearance: none;
     width: 16px;height: 16px;
     border: 1px solid #e9ecef;
@@ -95,11 +128,11 @@ input[type="checkbox"] {
     cursor: pointer;
 }
 
-input[type="checkbox"]:checked {
+input[type="checkbox"].eu_input:checked {
     background-color: #007CBD;
 }
 
-input[type="checkbox"]:checked::after {
+input[type="checkbox"].eu_input:checked::after {
     content: "";
     position: absolute;
     width: 8px;height: 8px;
@@ -110,16 +143,63 @@ input[type="checkbox"]:checked::after {
     top: 4px;
     left: 3px;
 }
-input[readonly] {
+input.eu_input[readonly] {
     cursor: default;
     outline: transparent;
     background-color: #F5F7F9;
 }
+
+input.eu_input[readonly]:focus {
+    outline: none;
+    background-color: #F5F7F9;
+    border: 1px solid transparent;
+}
+
+input[type="radio"].eu_input {
+    margin: 3px 8px 0 0;
+}
+
+input::placeholder {
+    color: #9EA8B3;
+    font-size: 15px;
+    font-family: 'NotoSansKR-400';
+    text-indent: 3px;
+}
+
+input[type="text"].eu_input {
+    text-indent: 3px;
+    color: #9EA8B3;
+    font-size: 15px;
+    font-family: 'NotoSansKR-400';
+    box-sizing: border-box;
+    padding: 0px 4px;
+}
+
+input[type="text"].eu_input::placeholder {
+    font-family: 'NotoSansKR-400';
+    color: #9EA8B3;
+    text-indent: 3px;
+    font-size: 15px;
+}
+
+label.eu_label {
+    margin-right: 12px;
+    color: #555F6D;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+select.eu_select {
+    color: #9EA8B3;
+    font-size: 13px;
+}
+
+
 /* input, textarea, selectbox, radio, checkbox css 초기화 */
 /* default css */
 
 /* gnb css */
-header {
+header.eu_header {
     width: 100%;
     max-width: 1280px;
     height: 100px;
@@ -130,9 +210,9 @@ header {
     flex-wrap: nowrap;
     margin: 0 auto;
     font-family: 'NotoSansKR-500';
-}
+} /* 충돌 생길 수 있는 부분 마킹 */
 
-header nav.gnb {
+header.eu_header nav.eu_gnb {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -141,7 +221,7 @@ header nav.gnb {
     height: 100%;
 }
 
-.logo_box {
+.eu_logo_box {
     width: 150px;
     height: 100%;
     display: flex;
@@ -149,12 +229,12 @@ header nav.gnb {
     align-items: center;
 }
 
-.logo_box img {
+.eu_logo_box img {
     width: 100%;
     cursor: pointer;
 }
 
-.gnb .menu_bar {
+.eu_gnb .menu_bar {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -162,11 +242,11 @@ header nav.gnb {
     width: 700px;
 }
 
-.gnb .menu_bar li {
+.eu_gnb .menu_bar li {
     width: auto;
 }
 
-.gnb .menu_bar li a {
+.eu_gnb .menu_bar li a {
     font-size: 17px;
 }
 /* gnb css */
@@ -174,15 +254,15 @@ header nav.gnb {
 
 
 /* footer css */
-.footer {
+.eu_footer {
     width: 100%;
     max-width: 1920px;
     height: 150px;
     background-color: #F5F7F9;
     margin: 0 auto;
-}
+}/* 충돌 생길 수 있는 부분 마킹 */
 
-.footer_inner {
+.eu_footer_inner {
     width: 1280px;
     height: 100%;
     display: flex;
@@ -191,12 +271,12 @@ header nav.gnb {
     margin: 0 auto;
 }
 
-.footer_inner .ft_flex {
+.eu_footer_inner .ft_flex {
     padding: 0 40px 0 0;
     color: #555F6D;
 }
 
-.footer_inner .ft_flex:nth-child(2) {
+.eu_footer_inner .ft_flex:nth-child(2) {
     height: 100%;
     display: flex;
     justify-content: center;
@@ -208,24 +288,24 @@ header nav.gnb {
     font-family: 'NotoSansKR-500';
 }
 
-.footer_inner .ft_flex a {
+.eu_footer_inner .ft_flex a {
     color: #555F6D;
 }
 
-.footer_inner .ft_flex img {
+.eu_footer_inner .ft_flex img {
     width: 201px;
 }
 
-.footer_inner .ft_flex .terms {
+.eu_footer_inner .ft_flex .terms {
     margin-bottom: 8px;
 }
 
-.footer_inner .ft_flex .terms a {
+.eu_footer_inner .ft_flex .terms a {
     margin-right: 10px;
     position: relative;
 }
 
-.footer_inner .ft_flex .terms a:nth-child(1):after {
+.eu_footer_inner .ft_flex .terms a:nth-child(1):after {
     content: "|";
     position: absolute;
     top: -1px;
@@ -234,32 +314,32 @@ header nav.gnb {
     color: #9EA8B3;
 }
 
-.footer_inner .ft_flex .address {
+.eu_footer_inner .ft_flex .address {
     display: flex;
     flex-direction: row;
     margin-bottom: 4px;
 }
 
-.footer_inner .ft_flex .address p {
+.eu_footer_inner .ft_flex .address p {
     font-family: 'NotoSansKR-500';
 }
 
-.footer_inner .ft_flex .copyright {
+.eu_footer_inner .ft_flex .copyright {
 
 }
 
-.footer .address {
+.eu_footer .address {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.footer .address p {
+.eu_footer .address p {
     margin: 0 15px 0 0;
     position: relative;
 }
 
-.footer .address p:first-child::after {
+.eu_footer .address p:first-child::after {
     content: "|";
     position: absolute;
     top: -1px;
@@ -267,7 +347,7 @@ header nav.gnb {
     color: #9EA8B3;
 }
 
-.footer .copyright {
+.eu_footer .copyright {
     
 }
 
@@ -297,6 +377,30 @@ header nav.gnb {
     background-color: #00466B !important;
 }
 
+button[type="submit"].eu_button.bg_w {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #007CBD;
+    height: 40px;
+    color: #007CBD;
+    border-radius: 4px;
+    transition: all 0.2s;
+    font-size: 17px;
+    font-family: 'NotoSansKR-500';
+}
+
+button[type="submit"].eu_button.bg_b {
+    width: 100%;
+    background-color: #007CBD;
+    border: 1px solid #007CBD;
+    height: 40px;
+    color: #fff;
+    border-radius: 4px;
+    transition: all 0.2s;
+    font-size: 17px;
+    font-family: 'NotoSansKR-500';
+}
+
 /* button hover css guideline */
 
 /* scrollbar guideline */
@@ -320,3 +424,142 @@ header nav.gnb {
 }
 
 /* scrollbar guideline */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 컴포넌트 css */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 컴포넌트 css */

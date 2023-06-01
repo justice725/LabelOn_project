@@ -1,25 +1,18 @@
 @charset "utf-8";
 
-/* body 임시 css html 이동 시 코드 삭제 */
-body {
-    width: 100%;
-    max-width: 1920px;
+/* 모달창 위치조정을 위한 css -> 삭제 */
+body.body_510 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 1080px;
-    box-sizing: border-box;
-    padding: 20px !important;
+    padding: 100px 20px;
 }
-/* body 임시 css html 이동 시 코드 삭제 */
-
-
-
-
+/* 모달창 위치조정을 위한 css -> 삭제 */
 
 /* Sementic modal css */
 .sem_modal {
     width: 400px;
+    min-width: 400px;
     display: flex;
     box-sizing: border-box;
     border: 1px solid #F0F3F5;
@@ -36,7 +29,7 @@ body {
     overflow-y: auto;
 }
 
-.sem_scrollbox > div > div.mb_16 {
+.sem_scrollbox > div > div.eu_mb_16 {
     margin-bottom: 16px;
 }
 
@@ -73,27 +66,6 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-}
-
-.sem_modal_box .sem_title_box {
-    width: 100%;
-    background-color: #007CBD;
-    height: 42px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 8px 16px;
-    color: #fff;
-    position: relative;
-}
-
-.sem_modal_box .sem_arrow_box {
-    width: 24px;
-    height: 24px;
-    background: url(../images/work/option-btn-right.png) no-repeat;
-    background-size: cover;
-    cursor: pointer;
 }
 
 .sem_scrollbox > div {
@@ -144,7 +116,7 @@ body {
 }
 
 .label_icon_box .view_icon {
-    background: url(../images/work/ctrl-btn-04.png) no-repeat;
+    background: url(../../images/work/ctrl-btn-04.png) no-repeat;
     background-size: cover;
 }
 
@@ -157,7 +129,7 @@ body {
 
 .label_icon_box .cursor_icon {
     background-size: cover;
-    background: url(../images/work/mouse.png) no-repeat;
+    background: url(../../images/work/mouse.png) no-repeat;
 }
 
 .label_icon_box .cursor_icon:hover {
@@ -167,7 +139,7 @@ body {
 
 .label_icon_box .bin_icon {
     background-size: cover;
-    background: url(../images/work/trash.png) no-repeat;
+    background: url(../../images/work/trash.png) no-repeat;
 }
 
 .label_icon_box .bin_icon:hover {
@@ -323,6 +295,7 @@ body {
 /* text TO QA modal 1 */
 .modal {
     width: 600px;
+    min-width: 600px;
     display: flex;
     box-sizing: border-box;
     border: 1px solid #F0F3F5;
@@ -337,26 +310,26 @@ body {
     margin: 0;
 }
 
-.scrollbox {
+.toqa_1_scrollbox {
     width: 100%;
     height: 657px;
     position: relative;
     overflow-y: auto;
 }
 
-.scrollbox::-webkit-scrollbar {
+.toqa_1_scrollbox::-webkit-scrollbar {
     width: 4px;
     background: #E9ECEF;
     border-radius: 10px;
 }
 
-.scrollbox::-webkit-scrollbar-thumb{
+.toqa_1_scrollbox::-webkit-scrollbar-thumb{
     width: 4px;
     background: #9EA8B3;
     border-radius: 10px;
 }
 
-.scrollbox::-webkit-scrollbar-track {
+.toqa_1_scrollbox::-webkit-scrollbar-track {
     width: 4px;
     background: #E9ECEF;
     border-radius: 10px;
@@ -371,29 +344,19 @@ body {
     flex-wrap: wrap;
 }
 
-.modal_box .title_box {
-    width: 100%;
-    background-color: #007CBD;
-    height: 42px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 8px 16px;
-    color: #fff;
-    position: relative;
-}
-
-.modal_box .arrow_box {
+.arrow_box {
     width: 24px;
     height: 24px;
-    background: url(../images/work/option-btn-right.png) no-repeat;
+    background: url(../../images/work/option-btn-right.png) no-repeat;
     background-size: cover;
     cursor: pointer;
 }
 
 .inner_content_box {
     width: 100%;
+}
+
+.inner_content_box.eu_ht_489 {
     height: 489px;
 }
 
@@ -405,7 +368,7 @@ body {
     width: 100%;
     border-bottom: 1px solid #F0F3F5;
     box-sizing: border-box;
-    padding: 16px;
+    padding: 16px 16px 15px 16px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -495,51 +458,14 @@ body {
     color: #9EA8B3;
 }
 
-.inner_content_box > div input {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    border: 1px solid #F0F3F5;
-    box-sizing: border-box;
-    color: #9EA8B3;
-    padding: 8px 4px;
-    height: 64px;
-    display: inline-block;
-    text-align: start;
-    vertical-align: text-top;
-    text-align: initial;
-}
-
-.inner_content_box > div input:focus {
-    outline: none;
-    border:1px solid #9EA8B3;
-}
-
 .inner_content_box > div textarea {
     width: 100%;
     padding: 0;
     margin: 0;
-    border: 1px solid #F0F3F5;
-    box-sizing: border-box;
     padding: 8px 4px;
     height: 64px;
-    resize: none;
-    font-family: 'NotoSansKR-400';
     color: #9EA8B3;
-    text-indent: 3px;
 }
-
-.inner_content_box > div textarea:focus {
-    border:1px solid #9EA8B3;
-}
-
-.inner_content_box > div textarea::placeholder {
-    font-size: 15px;
-    font-family: 'NotoSansKR-400';
-    color: #9EA8B3;
-    text-indent: 3px;
-}
-
 
 .text_length {
     position: absolute;
@@ -564,13 +490,6 @@ body {
 
 .red_rabel_btn {
     background-color: rgba(240, 128, 128, 0.3);
-}
-
-.submit_box {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 16px;
-    position: relative;
 }
 
 .submit_box p {
@@ -604,10 +523,6 @@ body {
     margin-right: 24px;
 }
 
-.submit_box_wrap > div input {
-    margin: 3px 8px 0 0;
-}
-
 .submit_box_wrap > div label {
     margin-right: 16px;
     font-family: 'NotoSansKR-400';
@@ -615,21 +530,12 @@ body {
 }
 
 .submit_box_wrap input[type=radio] {
-    appearance: none;
-    width: 16px;
-    height: 16px;
-    background-color: #fff;
-    border-radius: 51%;
-    border: 1px solid #E9ECEF;
-    position: relative;
     z-index: 2;
 }
 
 .submit_box_wrap input[type=radio]:checked {
-    border: 1px solid #E9ECEF;
     display: inline-block;
     width: 16px;height: 16px;
-    background-color: #fff;
 }
 
 .submit_box_wrap input[type=radio]:checked::after{
@@ -689,22 +595,11 @@ body {
 }
 
 .submit_btn_box button {
-    width: 100%;
-    height: 40px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 17px;
-    border: 1px solid #007CBD;
-    background-color: #fff;
-    color: #007CBD;
-    transition: all 0.2s;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
 }
 
 .submit_btn_box button:hover {
     box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.15);
-    color: #fff;
-    background-color: #00466B;
 }
 
 .inner_content_box > div .user_set_box .length_box {
@@ -738,6 +633,7 @@ body {
 
 .sec_modal {
     width: 600px;
+    min-width: 600px;
     display: flex;
     box-sizing: border-box;
     border: 1px solid #F0F3F5;
@@ -786,7 +682,7 @@ body {
     flex-wrap: wrap;
 }
 
-.sec_modal_box .sec_title_box {
+.title_box {
     width: 100%;
     background-color: #007CBD;
     height: 42px;
@@ -797,14 +693,6 @@ body {
     padding: 8px 16px;
     color: #fff;
     position: relative;
-}
-
-.sec_modal_box .sec_arrow_box {
-    width: 24px;
-    height: 24px;
-    background: url(../images/work/option-btn-right.png) no-repeat;
-    background-size: cover;
-    cursor: pointer;
 }
 
 .sec_inner_content_box {
@@ -992,41 +880,10 @@ body {
     position: relative;
 }
 
-.submit_box p {
-    font-size: 15px;
-    font-family: 'NotoSansKR-400';
-    color: #555F6D;
-}
-
-.submit_box_wrap {
-    width: 100%;
-    background-color: #F5F7F9;
-    border-radius: 4px;
-    color: #555F6D;
-    box-sizing: border-box;
-    padding: 8px;
-}
-
-.submit_box_wrap > div p {
-    margin-right: 24px;
-}
-
-.submit_box_wrap > div input {
-    margin: 3px 8px 0 0;
-}
-
 .submit_box_wrap > div label {
     margin-right: 16px;
     font-family: 'NotoSansKR-400';
     font-size: 15px;
-}
-
-.submit_box_wrap > div {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 15px;
-    line-height: 1.8;
 }
 
 .submit_box_wrap > div:first-child {
@@ -1036,24 +893,6 @@ body {
 
 .submit_box_wrap > div:last-child {
     padding-top: 8px;
-}
-
-.submit_box_wrap input[type=radio] {
-    appearance: none;
-    width: 16px;
-    height: 16px;
-    background-color: #fff;
-    border-radius: 51%;
-    border: 1px solid #E9ECEF;
-    position: relative;
-    z-index: 2;
-}
-
-.submit_box_wrap input[type=radio]:checked {
-    border: 1px solid #E9ECEF;
-    display: inline-block;
-    width: 16px;height: 16px;
-    background-color: #fff;
 }
 
 .submit_box_wrap input[type=radio]:checked::after{

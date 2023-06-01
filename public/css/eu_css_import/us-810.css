@@ -1,23 +1,9 @@
 @charset "utf-8";
 
-/* body 임시 css html 이동 시 코드 삭제 */
-body {
-    width: 100%;
-    max-width: 1920px;
-    background-color: #1B242CB2;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    height: 100vh;
-}
-/* body 임시 css html 이동 시 코드 삭제 */
-
 /* 810 pop_modal */
 .pop_modal_application {
-    width: 100%;
-    max-width: 630px;
+    width: 630px;
+    min-width: 630px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,6 +11,10 @@ body {
     background-color: #fff;
     border: 1px solid #F0F3F5;
     border-radius: 8px;
+    /* 삭제 */
+    margin: 100px auto; 
+    box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+    /* 삭제 */
 }
 
 .pop_modal_application .pop_application_title_box {
@@ -124,23 +114,6 @@ body {
 .pop_application_content_box button.search_address:hover {
     color: #fff !important;
     background-color: #00466B !important;
-}
-
-input[type="text"].readonly {
-    background-color: #F5F7F9;
-    cursor:default;
-    
-}
-
-input[readonly] {
-    cursor: default;
-    outline: transparent;
-    background-color: #F5F7F9;
-}
-
-input[readonly]:focus {
-    outline: none;
-    border: 1px solid transparent;
 }
 
 .pop_application_content_box .detail_address {
@@ -475,6 +448,7 @@ input[readonly]:focus {
 
 .pop_application_content_box .agree_terms > div:nth-child(2) label span {
     color: #007CBD;
+    font-size: 13px;
 }
 
 .pop_application_content_box .agree_terms > div:nth-child(2) button {

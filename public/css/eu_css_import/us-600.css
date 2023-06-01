@@ -1,73 +1,8 @@
 @charset "utf-8";
 
-/* body 임시 css html 이동 시 코드 삭제 */
-html, body {
-    width: 100%;
-    max-width: 1920px;
-    margin: 0 auto;
-    position: relative;
-}
-/* body 임시 css html 이동 시 코드 삭제 */
-
-/* us-600 header / className에 따라서 스타일이 변경될 수 있음, 모듈화 필요 */
-header {
-    width: 100%;
-    max-width: 1920px;
-    height: 56px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    flex-direction: row;
-    border-bottom: 1px solid #E9ECEF;
-    box-sizing: border-box;
-    padding: 0 20px;
-}
-
-header:hover {
-    border-bottom: 1px solid #E9ECEF;
-}
-
-header .logo_box {
-    width: 138px;
-    height: 32px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header .logo_box img {
-    width: 100%;
-}
-
-.snb .user_account {
-    color: #555F6D;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row-reverse;
-}
-
-.snb .user_account:hover {
-    color: #1B242C;
-    filter: opacity(0.7) drop-shadow(0 0 0 #1B242C);
-}
-
-.snb .user_account::after{
-    content: "";
-    display: inline-flex;
-    width: 24px;
-    height: 24px;
-    background: url(../images/icon/user-circle-24.png) no-repeat;
-    background-size: cover;
-    margin-right: 5px;
-}
-
-/* us-600 header */
 
 /* 600 section */
-.page_check_box {
+.eu_page_check_box {
     width: 100%;
     max-width: 1920px;
     display: flex;
@@ -77,7 +12,7 @@ header .logo_box img {
     padding: 0 20px;
 }
 
-.page_check_box ul {
+.eu_page_check_box ul {
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -86,7 +21,7 @@ header .logo_box img {
     padding: 20px 0;
 }
 
-.page_check_box ul > li {
+.eu_page_check_box ul > li {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,7 +30,7 @@ header .logo_box img {
     font-size: 21px;
 }
 
-.page_check_box ul > li:nth-child(2) {
+.eu_page_check_box ul > li:nth-child(2) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,13 +39,7 @@ header .logo_box img {
     font-size: 21px;
 }
 
-.page_check_box ul > li > a {
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 71px;height: 48px;
-    font-size: 21px;
-    font-family: 'NotoSansKR-R'; */
+.eu_page_check_box ul > li > a {
     display: inline-flex;
     text-align: center;
     justify-content: center;
@@ -122,21 +51,21 @@ header .logo_box img {
     color: #9EA8B3;
 }
 
-.sub-menu-curr {
+.eu_sub-menu-curr {
     background: #ff805b;
     color: #fff !important; 
     border-radius: 24px;
     font-weight: 500;
 }
 
-.page_check_box ul > li > a:hover {
+.eu_page_check_box ul > li > a:hover {
     background: #ff805b;
     color: #fff;
     border-radius: 100px;
     font-weight: 500;
 }
 
-.rabel_check_box {
+.eu_rabel_check_box {
     width: 100%;
     background-color: #F0F3F5;
     height: 56px;
@@ -147,7 +76,7 @@ header .logo_box img {
     padding: 0 20px;
 }
 
-.rabel_wrapper {
+.eu_rabel_wrapper {
     width: 100%;
     height: 100%;
     display: flex;
@@ -156,7 +85,7 @@ header .logo_box img {
     flex-wrap: wrap;
 }
 
-.rabel_wrapper > button {
+.eu_rabel_wrapper > button {
     width: 110px;
     height: 32px;
     background: inherit;
@@ -170,17 +99,17 @@ header .logo_box img {
     font-size: 15px;
 }
 
-.rabel_wrapper > button:hover {
+.eu_rabel_wrapper > button:hover {
     border: 1px solid #007CBD;
     color: #007CBD;
 }
 
-.rabel_wrapper > button.curr {
+.eu_rabel_wrapper > button.eu_curr {
     border: 1px solid #007CBD;
     color: #007CBD;
 }
 
-.content_box {
+.eu_content_box {
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
@@ -191,12 +120,12 @@ header .logo_box img {
     align-items: center;
 }
 
-.content_text_box {
+.eu_content_text_box {
     width: 100%;
     max-width: 1247px;
 }
 
-.content_info{
+.eu_content_info{
     width: 100%;
     max-width: 1247px;
     display: flex;
@@ -205,7 +134,7 @@ header .logo_box img {
     flex-wrap: wrap;
 }
 
-.content_info .flex_1 {
+.eu_content_info .eu_flex_1 {
     width: 50%;
     max-width: 613px;
     display: flex;
@@ -215,7 +144,7 @@ header .logo_box img {
     justify-content: space-between;
 }
 
-.content_info .flex_1 p, .content_info .flex_2 p {
+.eu_content_info .eu_flex_1 p, .eu_content_info .eu_flex_2 p {
     color: #1B242C;
     font-size: 15px;
     margin-block-start: 0;
@@ -224,7 +153,7 @@ header .logo_box img {
     margin-inline-end: 0;
 }
 
-.content_info .flex_2 {
+.eu_content_info .eu_flex_2 {
     flex: 2;
     width: 100%;
     display: flex;
@@ -233,7 +162,7 @@ header .logo_box img {
     justify-content: space-between;
 }
 
-.content_info .flex_2 input[type="text"] {
+.eu_content_info .eu_flex_2 input[type="text"] {
     width: 100%;
     max-width: 1145px;
     height: 100px;
@@ -242,7 +171,7 @@ header .logo_box img {
     padding: 7px 8px;
 }
 
-.content_info input[type=text] {
+.eu_content_info input[type=text] {
     width: 100%;
     max-width: 511px;
     border: 1px solid #F0F3F5;
@@ -254,18 +183,18 @@ header .logo_box img {
     border-radius: 4px;
 }
 
-.content_info input[type=text]:focus {
+.eu_content_info input[type=text]:focus {
     outline: none;
     background-color: #fff;
     color: #9EA8B3;
     border: 1px solid #9ea8b3;
 }
 
-.content_info input[type=text]::placeholder {
+.eu_content_info input[type=text]::placeholder {
     color: #9EA8B3;
 }
 
-.content_detail {
+.eu_content_detail {
     width: 100%;
     max-width: 1247px;
     height: 567px;
@@ -276,25 +205,25 @@ header .logo_box img {
     border-radius: 4px;
 }
 
-.content_detail p {
+.eu_content_detail p {
     color: #1B242C;
     font-size: 15px;
     text-align: justify;
     font-weight: 400;
-    line-height: 25.5px;
+    line-height: 25.eu_5px;
 }
 
-.content_detail p span.yellow_rabel {
+.eu_content_detail p span.eu_yellow_rabel {
     background-color: #F6DDB3;
 }
 
-.content_detail p span.green_rabel {
+.eu_content_detail p span.eu_green_rabel {
     background-color: #BDDCBD;
 }
 /* 600 section */
 
 /* 600 modal */
-.modal {
+.eu_modal {
     width: 600px;
     height: auto;
     display: flex;
@@ -308,32 +237,32 @@ header .logo_box img {
     overflow: auto;
 }
 
-.scrollbox {
+.eu_scrollbox {
     width: 100%;
     position: relative;
     overflow-y: auto;
     height: 744px;
 }
 
-.scrollbox::-webkit-scrollbar {
+.eu_scrollbox::-webkit-scrollbar {
     width: 4px;
     background: #E9ECEF;
     border-radius: 10px;
 }
 
-.scrollbox::-webkit-scrollbar-thumb{
+.eu_scrollbox::-webkit-scrollbar-thumb{
     width: 4px;
     background: #9EA8B3;
     border-radius: 10px;
 }
 
-.scrollbox::-webkit-scrollbar-track {
+.eu_scrollbox::-webkit-scrollbar-track {
     width: 4px;
     background: #E9ECEF;
     border-radius: 10px;
 }
 
-.modal_box {
+.eu_modal_box {
     width: 100%;
     height: auto;
     display: flex;
@@ -342,37 +271,15 @@ header .logo_box img {
     flex-wrap: wrap;
 }
 
-.modal_box .title_box {
-    width: 100%;
-    background-color: #007CBD;
-    height: 42px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 8px 16px;
-    color: #fff;
-    position: relative;
-}
-
-.modal_box .arrow_box {
-    width: 24px;
-    height: 24px;
-    background: url(../images/work/option-btn-right.png) no-repeat;
-    background-size: cover;
-    cursor: pointer;
-}
-
-.inner_content_box {
-    width: 100%;
-
-}
-
-.question_list_box {
+.eu_inner_content_box {
     width: 100%;
 }
 
-.inner_content_box > div {
+.eu_question_list_box {
+    width: 100%;
+}
+
+.eu_inner_content_box > div {
     width: 100%;
     border-bottom: 1px solid #F0F3F5;
     box-sizing: border-box;
@@ -384,7 +291,7 @@ header .logo_box img {
     color: #555F6D;
 }
 
-.userable_edit {
+.eu_userable_edit {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -397,7 +304,7 @@ header .logo_box img {
     추가적인 스타일링 및 수정 사항있을 시 변경 가능
 */
 
-.userable_edit div:nth-child(2) {
+.eu_userable_edit div:nth-child(2) {
     width: 100%;
     max-width: 502px;
     display: flex;
@@ -406,23 +313,23 @@ header .logo_box img {
     flex-direction: column;
 }
 
-.userable_edit div:nth-child(2) span, .userable_edit div:nth-child(2) p,
- .userable_edit div:nth-child(2) select, .userable_edit div:nth-child(2) textarea, 
- .userable_edit div:nth-child(2) input, .userable_edit div:nth-child(2) label {
+.eu_userable_edit div:nth-child(2) span, .eu_userable_edit div:nth-child(2) p,
+ .eu_userable_edit div:nth-child(2) select, .eu_userable_edit div:nth-child(2) textarea, 
+ .eu_userable_edit div:nth-child(2) input, .eu_userable_edit div:nth-child(2) label {
     margin-bottom: 8px;
 }
 
-.userable_edit div:nth-child(1) {
+.eu_userable_edit div:nth-child(1) {
     width: auto;
     font-size: 17px;
 }
 
-.userable_edit div:nth-child(1) span,.userable_edit div:nth-child(1) p,
-.userable_edit div:nth-child(1) input,.userable_edit div:nth-child(1) textarea,
-.userable_edit div:nth-child(1) h1,.userable_edit div:nth-child(1) h2,
-.userable_edit div:nth-child(1) h3,.userable_edit div:nth-child(1) h4,
-.userable_edit div:nth-child(1) h5,.userable_edit div:nth-child(1) h6,
-.userable_edit div:nth-child(1) a,.userable_edit div:nth-child(1) ul {
+.eu_userable_edit div:nth-child(1) span,.eu_userable_edit div:nth-child(1) p,
+.eu_userable_edit div:nth-child(1) input,.eu_userable_edit div:nth-child(1) textarea,
+.eu_userable_edit div:nth-child(1) h1,.eu_userable_edit div:nth-child(1) h2,
+.eu_userable_edit div:nth-child(1) h3,.eu_userable_edit div:nth-child(1) h4,
+.eu_userable_edit div:nth-child(1) h5,.eu_userable_edit div:nth-child(1) h6,
+.eu_userable_edit div:nth-child(1) a,.eu_userable_edit div:nth-child(1) ul {
     margin-bottom:8px;
 }
 
@@ -431,12 +338,12 @@ header .logo_box img {
     추가적인 스타일링 및 수정 사항있을 시 변경 가능
 */
 
-.inner_content_box > div .userable_edit p {
+.eu_inner_content_box > div .eu_userable_edit p {
     font-size: 17px;
     font-family: 'NotoSansKR-500';
 }
 
-.inner_content_box textarea {
+.eu_inner_content_box textarea {
     width: 100%;
     padding: 0;
     margin: 0;
@@ -450,16 +357,18 @@ header .logo_box img {
     text-indent: 8px;
     font-size: 15px;
 }
-.inner_content_box textarea:focus {
+
+.eu_inner_content_box textarea:focus {
     border:1px solid #9EA8B3;
 }
-.inner_content_box textarea::placeholder {
+
+.eu_inner_content_box textarea::placeholder {
     color: #9EA8B3;
     font-family: 'NotoSansKR-400';
 }
 
 
-.inner_content_box > div select {
+.eu_inner_content_box > div select {
     width: 100%;
     max-width: 502px;
     margin: 0 ;
@@ -470,22 +379,11 @@ header .logo_box img {
     height: 32px;
     margin-bottom: 8px;
     border-radius: 4px;
-    font-family: 'NotoSansKR-400';
-    text-indent: 3px;
     font-size: 15px;
 }
 
-.inner_content_box > div select:focus {
-    outline: none;
-    border:1px solid #9EA8B3;
-}
 
-.inner_content_box > div select::placeholder {
-    font-family: 'NotoSansKR-400';
-    color: #9EA8B3;
-}
-
-.inner_content_box > div input {
+.eu_inner_content_box > div input {
     width: 100%;
     padding: 0;
     margin: 0;
@@ -497,12 +395,12 @@ header .logo_box img {
     border-radius: 4px;
 }
 
-.inner_content_box > div input:focus {
+.eu_inner_content_box > div input:focus {
     outline:none;
     border:1px solid #9EA8B3;
 }
 
-.rabel_circle {
+.eu_rabel_circle {
     border: none;
     width: 20px;
     height: 20px;
@@ -511,26 +409,26 @@ header .logo_box img {
     font-size: 13px;
 }
 
-.yellow_rabel_btn {
+.eu_yellow_rabel_btn {
     background-color:rgba(225, 140, 0, 0.3);
 }
 
-.green_rabel_btn {
+.eu_green_rabel_btn {
     background-color: rgba(34, 139, 34, 0.3);
 }
 
-.red_rabel_btn {
+.eu_red_rabel_btn {
     background-color: rgba(240, 128, 128, 0.3);
 }
 
-.submit_box {
+.eu_submit_box {
     width: 100%;
     box-sizing: border-box;
     padding: 16px;
     position: relative;
 }
 
-.submit_box_wrap {
+.eu_submit_box_wrap {
     width: 100%;
     max-width: 568px;
     background-color: #F5F7F9;
@@ -544,7 +442,7 @@ header .logo_box img {
     flex-direction: column;
 }
 
-.submit_box_wrap > div {
+.eu_submit_box_wrap > div {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -554,16 +452,16 @@ header .logo_box img {
     padding: 8px 0;
 }
 
-.submit_box_wrap > div:first-child {
+.eu_submit_box_wrap > div:first-child {
     padding-top: 0px;
     border-bottom: 1px solid #F0F3F5;
 }
 
-.submit_box_wrap > div:last-child {
+.eu_submit_box_wrap > div:last-child {
     padding-bottom: 0px;
 }
 
-.submit_box_wrap input[type=radio] {
+.eu_submit_box_wrap input[type=radio] {
     appearance: none;
     width: 16px;
     height: 16px;
@@ -574,19 +472,19 @@ header .logo_box img {
     z-index: 2;
 }
 
-.submit_box_wrap input[type=radio]:focus {
+.eu_submit_box_wrap input[type=radio]:focus {
     outline: none;
     border:1px solid #9EA8B3;
 }
 
-.submit_box_wrap input[type=radio]:checked {
+.eu_submit_box_wrap input[type=radio]:checked {
     border: 1px solid #E9ECEF;
     display: inline-block;
     width: 16px;height: 16px;
     background-color: #fff;
 }
 
-.submit_box_wrap input[type=radio]:checked::after{
+.eu_submit_box_wrap input[type=radio]:checked::after{
     content: "";
     position: absolute;
     top: calc(50% - 4px);
@@ -597,118 +495,44 @@ header .logo_box img {
     width: 8px;height: 8px;
 }
 
-.submit_box_wrap > div.disagree_select_box {
+.eu_submit_box_wrap > div.eu_disagree_select_box {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     height: 39px;
 }
 
-.disagree_select_box select {
+.eu_disagree_select_box select.eu_select {
     width: 100%;
     max-width: 80%;
-    color:#9EA8B3;
-    background-color: #fff;
-    border: 1px solid #F0F3F5;
-    padding: 4px 8px;
-    border-radius: 4px;
     height: 32px;
-    font-size: 13px;
-    font-family: 'NotoSansKR-400';
 }
 
-.disagree_select_box select:focus{
-    outline: none;
-    border:1px solid #9EA8B3;
-}
-
-.submit_box_wrap > div.disagree_detail {
+.eu_submit_box_wrap > div.eu_disagree_detail {
     width: 100%;
     height: 40px;
 }
 
-.submit_box_wrap > div.disagree_detail input {
+.eu_submit_box_wrap > div.eu_disagree_detail input {
     width: 100%;
-    color:#9EA8B3;
-    background-color: #fff;
-    border: 1px solid #F0F3F5;
     max-height: 31px;
     height: 31px;
-    padding: 0 8px;
-    border-radius: 4px;
-    font-family: 'NotoSansKR-400';
-    font-size: 15px;
 }
 
-.submit_box_wrap > div.disagree_detail input:focus {
-    outline: none;
-    border:1px solid #9EA8B3;
-}
 
-.submit_box_wrap > div.disagree_detail input::placeholder {
-    font-family: 'NotoSansKR-400';
-    color: #9EA8B3;
-    text-indent: 3px;
-    font-size: 15px;
-}
 
-label {
-    font-family: 'NotoSansKR-400';
-    color: #555F6D;
-}
-
-.submit_box_wrap > div input {
-    margin :3px 8px 0px 0px;
-}
-
-.submit_box_wrap > div label {
+.eu_submit_box_wrap > div label.eu_rabel {
     margin-right: 16px;
 }
 
-.submit_box_wrap > div > p {
+.eu_submit_box_wrap > div > p {
     font-size: 15px;
     font-family: 'NotoSansKR-400';
     color: #555F6D;
     margin-right: 24px;
 }
 
-.submit_btn_box {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 0 0;
-}
-
-.submit_btn_box .submit_btn {
-    width: 48%;
-    max-width: 275px;
-    height: 40px;
-    border: 1px solid #007CBD;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 17px;
-}
-
-.submit_btn_box .submit_btn.disagree_btn {
-    background-color: #fff;
-    color: #007CBD;
-}
-
-.submit_btn_box .submit_btn.agree_btn {
-    background-color: #007CBD;
-    color: #fff;
-}   
-
-.submit_btn_box .submit_btn:hover {
-    color: #fff;
-    background-color: #00466B;
-}
-
-
-
-
-.inner_content_box > div .user_set_box .length_box {
+.eu_inner_content_box > div .eu_user_set_box .eu_length_box {
     position: relative;
     display: flex;
     width: 100%;
@@ -720,13 +544,13 @@ label {
     top: -24px;
 }
 
-.inner_content_box > div .user_set_box .length_box p {
+.eu_inner_content_box > div .eu_user_set_box .eu_length_box p {
     margin-bottom: 0 !important;
     color: #9EA8B3;
     font-size: 13px;
 }
 
-.text_count_box {
+.eu_text_count_box {
     height: 162px;
 }
 /* 600 modal */
