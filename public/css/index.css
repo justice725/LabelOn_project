@@ -1,11 +1,11 @@
 @charset "utf-8";
 
-header {
+header.eu_page_head {
     padding-bottom: 38px;
 }
 
 /* banner css */
-.banner {
+.eu_banner {
     width: 100%;
     height: auto;
 }
@@ -14,12 +14,12 @@ header {
     position: relative;
 }
 
-.banner .ban_float {
+.eu_banner .ban_float {
     width: 100%;
     position: relative;
 }
 
-.banner .ban_float img.ban_img {
+.eu_banner .ban_float img.ban_img {
     width: 100%;
 }
 
