@@ -32,25 +32,25 @@ html, body {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-} 
+} /* 충돌 생길 수 있는 부분 마킹 */
 
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
-}
+}/* 충돌 생길 수 있는 부분 마킹 */
 
 a {
     text-decoration: none;
     color: #1B242C;
-}
+}/* 충돌 생길 수 있는 부분 마킹 */
 
 h1, h2, h3, h4, h5, h6, span, p {
     padding: 0;
     margin: 0;
     line-height: 1.6;
     font-family: "NotoSansKR-400";
-}
+}/* 충돌 생길 수 있는 부분 마킹 */
 
 /* input, textarea, selectbox, radio, checkbox css 초기화 */
 textarea.eu_textarea, select.eu_select, input.eu_input {
@@ -292,14 +292,7 @@ header.eu_page_head nav.eu_gnb {
     top: 130px;
     z-index: 3;
     height: auto;
-    /* 
-     */
     display: none;
-}
-
-.eu_sub_menu.open {
-    /* opacity: 1;
-    visibility: visible; */
 }
 
 .eu_sub_menu > li {
@@ -420,10 +413,6 @@ header.eu_page_head nav.eu_gnb {
     font-family: 'NotoSansKR-500';
 }
 
-.eu_footer_inner .ft_flex .copyright {
-
-}
-
 .eu_footer .address {
     display: flex;
     justify-content: center;
@@ -443,17 +432,9 @@ header.eu_page_head nav.eu_gnb {
     color: #9EA8B3;
 }
 
-.eu_footer .copyright {
-    
-}
-
 /* footer css */
 
 /* icon hover color css guideline */
-
-.icon_color {
-
-}
 
 .icon_color:hover {
     color: #1B242C;
@@ -655,135 +636,3 @@ table tbody tr:hover {
     background-color: #F5F7F9;
 }
 /* table */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 컴포넌트 css */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 컴포넌트 css */

@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+/* page component change section */
+
 .eu_850_main {
     width: 100%;
     max-width: 1280px;
@@ -85,8 +87,6 @@ tbody.eu_tbody {
     color: #555F6D !important;
 }
 
-
-
 td p {
     display: inline-block;
 }
@@ -136,3 +136,5 @@ td.flex_row_box > div.eu_850_pdf_btn:nth-child(1):after {
     background-size: 18px 23px;
     margin-left: 4px;
 }
+
+/* page component change section */
