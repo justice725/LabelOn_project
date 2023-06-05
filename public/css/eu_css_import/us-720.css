@@ -113,6 +113,7 @@
 
 .eu_720_main .eu_720_project > div > label {
     margin-left: 8px;
+    cursor: pointer;
 }
 
 .eu_720_main .project_info textarea.eu_textarea {
