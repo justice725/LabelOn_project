@@ -12,6 +12,7 @@
 @import url("./eu_css_import/us-860.css");
 @import url("./eu_css_import/us-850.css");
 @import url("./eu_css_import/us-900.css");
+@import url("./eu_css_import/us-910.css");
 
 
 /* default css */
@@ -614,7 +615,11 @@ button.eu_button:hover {
 
 
 
-
+/* table */
+table tbody tr:hover {
+    background-color: #F5F7F9;
+}
+/* table */
 
 
 

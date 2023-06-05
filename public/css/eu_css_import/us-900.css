@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-.page_check_box.us_900_menu {
+.page_check_box.eu_900_menu {
     padding-bottom: 44px;
 }
 
@@ -24,6 +24,14 @@ input[type="date"]:valid::before{
     display: none;
 }
 
+select.eu_select {
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../../images/icon/arr-b.png) no-repeat 99% 50%;
+    background-size: 20px 20px;
+}
+
 .eu_search_detail select.eu_select {
     -webkit-appearance: none; 
     -moz-appearance: none;
@@ -41,6 +49,7 @@ select::-ms-expand {
     border: 1px solid transparent;
     border-bottom: 1px solid #F0F3F5;
     margin-left: 20px;
+    font-size: 15px;
 }
 
 .eu_search_detail {

@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+/* 상단 사용자 메뉴 */
+
+.eu_910_user_detail {
+    width: 100%;
+    max-width: 1920px;
+    box-sizing: border-box;
+    padding: 12px 20px 32px 20px;
+}
+
+.eu_910_user_innerbox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.eu_910_user_innerbox.grid_1280_12 {
+    gap: 20px;
+}
+
+.user_datail_contentbox {
+    grid-column: span 3;
+    height: 124px;
+    box-sizing: border-box;
+    padding: 16px;
+    border: 1px solid #F0F3F5;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.user_datail_contentbox .ud_title_box {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.user_datail_contentbox .ud_title_box p.user_title {
+    font-size: 21px;
+    color: #555F6D;
+    position: relative;
+    margin-left: 28px;
+}
+
+.user_datail_contentbox .ud_title_box p.title_icon::before {
+    content: "";
+    position: absolute;
+    width: 24px;height: 24px;
+    background: url(../../images/icon/user-circle-24.png) no-repeat;
+    background-size: 24px 24px;
+    top: 6px;
+    left: -28px;
+}
+
+.user_datail_contentbox .ud_title_box p.minus_icon::before {
+    content: "";
+    position: absolute;
+    width: 24px;height: 24px;
+    top: 6px;
+    left: -28px;
+    background: url(../../images/icon/circle-minus.png) no-repeat;
+    background-size: 24px 24px;
+}
+
+.user_datail_contentbox .ud_title_box p.check_icon::before {
+    content: "";
+    position: absolute;
+    width: 24px;height: 24px;
+    top: 6px;
+    left: -28px;
+    background: url(../../images/icon/circle-check.png) no-repeat;
+    background-size: 24px 24px;
+}
+
+.user_datail_contentbox .ud_title_box p.cross_icon::before {
+    content: "";
+    position: absolute;
+    width: 24px;height: 24px;
+    top: 6px;
+    left: -28px;
+    background: url(../../images/icon/circle-x.png) no-repeat;
+    background-size: 24px 24px;
+}
+
+.user_datail_contentbox .ud_text_box {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.user_datail_contentbox .ud_text_box p.user_detail {
+    font-family: 'NotoSansKR-500';
+    font-size: 24px;
+    color: #1B242C;
+}
+
+.user_datail_contentbox .ud_text_box p.user_detail span {
+    font-size: 21px;
+    font-family: 'NotoSansKR-400';
+}
+
+.user_datail_contentbox .ud_text_box p.fc_blue {
+    color: #007CBD;
+}
+
+.user_datail_contentbox .ud_text_box p.fc_red {
+    color: #FF805B;
+}
+/* 상단 사용자 메뉴 */
+
+
+/* 하단 테이블 */
+.eu_910_content {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px 20px;
+    border-top: 1px solid #555F6D;
+    margin: 0 auto;
+}
+
+.eu_table_box {
+    width: 100%;
+}
+
+table.eu_910_table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.eu_910_table thead {
+    width: 100%;
+    border-bottom: 1px solid #F0F3F5;
+    height: 62px;
+}
+
+table.eu_910_table tbody tr {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #F0F3F5;
+    height: 120px;
+    transition: all 0.2s;
+}
+
+table.eu_910_table tbody tr:hover {
+    box-shadow: 0px 2px 6px 2px #00000026;
+}
+
+.eu_910_table tbody td button.eu_button.bg_w {
+    width: 109px;height: 40px;
+}
+
+.eu_910_table tbody td button.eu_button.bg_b {
+    width: 109px;height: 40px;
+    margin: 0 6px;
+}
+
+
+/* 하단 테이블 */
+
+/* page control box  */
+
+.eu_910_pagecontrolbox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.eu_910_pagecontrolbox .page_back_box {
+    
+}
+
+.page_back_btn {
+    width: 102px;
+    height: 32px;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9EA8B3;
+    font-size: 17px;
+}
+
+.page_back_btn i {
+    display: inline-block;
+    width: 32px;height: 32px;
+    background: url(../../images/icon/arrow-narrow-left.png) no-repeat;
+    background-size: 32px 32px;
+    margin-right: 8px;
+}
+
+.all_check_box .eu_button {
+    width: 102px;height: 32px;
+    border: 1px solid #E9ECEF;
+    color: #9EA8B3;
+    font-size: 15px;
+    background-color: #fff;
+}
+
+/* page control box  */
