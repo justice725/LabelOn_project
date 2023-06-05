@@ -323,6 +323,11 @@
     border: 1px solid #1E9700;
 }
 
+.list_content_box .eu_button.btn_green:hover {
+    color: #fff !important;
+    background-color: #1E9700 !important;
+}
+
     /* column box */
 
 /* list section box */
