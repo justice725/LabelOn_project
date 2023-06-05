@@ -180,12 +180,8 @@ table.eu_910_table tbody tr:hover {
     margin-top: 32px;
 }
 
-.eu_910_pagecontrolbox .page_back_box {
-    
-}
-
 .page_back_btn {
-    width: 102px;
+    width: auto;
     height: 32px;
     border: none;
     background-color: transparent;
@@ -196,12 +192,22 @@ table.eu_910_table tbody tr:hover {
     font-size: 17px;
 }
 
+.page_back_btn:hover {
+    color: #555F6D;
+    border-bottom: 1px solid #555F6D;
+}
+
 .page_back_btn i {
     display: inline-block;
     width: 32px;height: 32px;
     background: url(../../images/icon/arrow-narrow-left.png) no-repeat;
     background-size: 32px 32px;
     margin-right: 8px;
+}
+
+.page_back_btn:hover i {
+    background: url(../../images/icon/arrow-narrow-left-h.png) no-repeat;
+    background-size: 32px 32px;
 }
 
 .all_check_box .eu_button {

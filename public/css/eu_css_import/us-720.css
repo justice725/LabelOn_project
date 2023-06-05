@@ -129,6 +129,9 @@
     overflow: hidden;
     border: 0;
 }
+.eu_720_main input[type="file"]:hover, .eu_720_main input[type="file"]:focus {
+    border: none;
+}
 
 .eu_720_main .file_box{
     position: relative;
@@ -169,6 +172,11 @@
     position: absolute;
     left: 440px;
     top: 10px;
+}
+
+.eu_720_main .file_box input[type="reset"]:hover {
+    color: #1B242C;
+    filter: opacity(0.7) drop-shadow(0 0 0 #1B242C);
 }
 
 .eu_720_main div.bm_1 {
