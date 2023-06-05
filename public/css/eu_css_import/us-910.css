@@ -178,7 +178,9 @@ table.eu_910_table tbody tr:hover {
     justify-content: space-between;
     align-items: center;
     margin-top: 32px;
+    padding: 0 0 1px 0;
 }
+
 
 .page_back_btn {
     width: auto;
@@ -219,3 +221,70 @@ table.eu_910_table tbody tr:hover {
 }
 
 /* page control box  */
+
+/* circle btn */
+
+.circle_btn {
+    padding: 7px 20px;
+    position: relative;
+    cursor: pointer;
+    appearance: none;
+    background-color: transparent;
+    border-width: 0;
+    border-style: solid;
+    box-sizing: border-box;
+}
+
+.circle_btn .eu_circle {
+    border: 1px solid #007CBD;
+    border-radius: 20px;
+    width: 40px;height: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: all 0.2s;
+}
+
+.circle_btn .circle_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle_btn .circle_text p {
+    font-size: 17px;
+}
+
+.circle_btn .circle_text span {
+    display: inline-block;
+    width: 16px;height: 16px;
+    background: url(../../images/login-arr.png) no-repeat;
+    transform: rotate(180deg);
+    transform-origin: center center;
+    background-position: 4px;
+    background-size: contain;
+    margin-right: 4px;
+}
+
+.circle_btn:hover .eu_circle {
+    width: 100%;
+    border-radius: 20px;
+    background-color: #007CBD;
+}
+
+.circle_btn:hover .circle_text{
+    color: #fff;
+}
+
+.circle_btn:hover .circle_text span {
+    width: 16px;height: 16px;
+    background: url(../../images/icon/chevron-left-w.png) no-repeat;
+    transform: rotate(360deg);
+    transform-origin: center center;
+    background-size: contain;
+    background-position: -4px;
+    background-size: contain;
+    margin-right: 4px;
+}
+/* circle btn */
