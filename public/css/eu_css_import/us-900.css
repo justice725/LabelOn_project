@@ -9,6 +9,7 @@
 input[type="date"] {
     font-family: 'NotoSansKR-400';
     font-size: 15px;
+    cursor: pointer;
 }
 
 input[type="date"]::before{
@@ -23,6 +24,24 @@ input[type="date"]:focus::before,
 input[type="date"]:valid::before{
     display: none;
 }
+
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+    appearance: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url('../../images/icon/calendar.png') no-repeat 98% 50%; 
+    width: 20px;
+    height: 15px;
+    border-width: thin;
+    background-size: 20px 20px;
+ }
 
 select.eu_select {
     -webkit-appearance: none; 
@@ -50,6 +69,12 @@ select::-ms-expand {
     border-bottom: 1px solid #F0F3F5;
     margin-left: 20px;
     font-size: 15px;
+    border-radius: 0;
+}
+
+.eu_search_detail select.eu_select:focus {
+    border: 1px solid transparent;
+    border-bottom: 1px solid #9EA8B3;
 }
 
 .eu_search_detail {
@@ -59,7 +84,7 @@ select::-ms-expand {
     align-items: center;
     flex-direction: row;
     box-sizing: border-box;
-    padding: 0 20px 32px 20px;
+    padding: 0 20px 24px 20px;
 }
 
 .eu_input.search_input {
@@ -71,6 +96,7 @@ select::-ms-expand {
     color: #9EA8B3;
     text-align: center;
     margin-left: 20px;
+    border-radius: 0;
 }
 
 .eu_input.search_input::placeholder{
@@ -79,6 +105,12 @@ select::-ms-expand {
 
 .eu_input.search_input:focus::placeholder {
     color: transparent;
+}
+
+input[type="text"].eu_input.search_input:focus {
+    border: 1px solid transparent;
+    border-bottom: 1px solid #9EA8B3;
+    border-radius: 0;
 }
 
 
@@ -99,6 +131,12 @@ input.eu_input.eu_date_input {
     border: 1px solid transparent;
     border-bottom: 1px solid #F0F3F5;
     margin-left: 20px;
+    border-radius: 0;
+}
+
+input.eu_input.eu_date_input:focus {
+    border: 1px solid transparent;
+    border-bottom: 1px solid #9EA8B3;
 }
 
 input.eu_date_input {

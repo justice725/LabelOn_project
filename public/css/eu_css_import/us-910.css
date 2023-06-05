@@ -6,7 +6,7 @@
     width: 100%;
     max-width: 1920px;
     box-sizing: border-box;
-    padding: 12px 20px 32px 20px;
+    padding: 12px 20px 24px 20px;
 }
 
 .eu_910_user_innerbox {
@@ -147,6 +147,11 @@ table.eu_910_table tbody tr {
     border-bottom: 1px solid #F0F3F5;
     height: 120px;
     transition: all 0.2s;
+    color: #555F6D;
+}
+
+table.eu_910_table tbody tr img {
+    width: 126px;height: 70px;
 }
 
 table.eu_910_table tbody tr:hover {

@@ -13,6 +13,7 @@
 @import url("./eu_css_import/us-850.css");
 @import url("./eu_css_import/us-900.css");
 @import url("./eu_css_import/us-910.css");
+@import url("./eu_css_import/us-720.css");
 
 
 /* default css */
@@ -574,7 +575,9 @@ button.eu_button:hover {
 }
 
 .pagination_box > ul > li > a:hover {
-    border: 1px solid #9EA8B3;
+    background-color: #007CBD;
+    color: #fff;
+    border: 1px solid #007CBD;
 }
 
 .pagination_box > ul > li > a.page_curr {
@@ -590,11 +593,27 @@ button.eu_button:hover {
     background-position: center center;
 }
 
+.pagination_box > ul > li > a.page_first:hover {
+    background: url(../images/icon/pg-first-left-w.png) no-repeat;
+    background-size: 24px 24px;
+    width: 100%;height: 100%;
+    background-position: center center;
+    background-color: #007CBD;
+}
+
 .pagination_box > ul > li > a.page_prev {
     background: url(../images/icon/pg-left.png) no-repeat;
     background-size: 24px 24px;
     width: 100%;height: 100%;
     background-position: center center;
+}
+
+.pagination_box > ul > li > a.page_prev:hover {
+    background: url(../images/icon/chevron-left-w.png) no-repeat;
+    background-size: 24px 24px;
+    width: 100%;height: 100%;
+    background-position: center center;
+    background-color: #007CBD;
 }
 
 .pagination_box > ul > li > a.page_next {
@@ -604,11 +623,27 @@ button.eu_button:hover {
     background-position: center center;
 }
 
+.pagination_box > ul > li > a.page_next:hover {
+    background: url(../images/icon/chevron-right-w.png) no-repeat;
+    background-size: 24px 24px;
+    width: 100%;height: 100%;
+    background-position: center center;
+    background-color: #007CBD;
+}
+
 .pagination_box > ul > li > a.page_last {
     background: url(../images/icon/pg-last-right.png) no-repeat;
     background-size: 24px 24px;
     width: 100%;height: 100%;
     background-position: center center;
+}
+
+.pagination_box > ul > li > a.page_last:hover {
+    background: url(../images/icon/pg-last-right-w.png) no-repeat;
+    background-size: 24px 24px;
+    width: 100%;height: 100%;
+    background-position: center center;
+    background-color: #007CBD;
 }
 
 /* pagination */

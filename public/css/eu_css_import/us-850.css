@@ -15,7 +15,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
 }
 
 .eu_info_box p {
@@ -77,6 +77,12 @@ tbody.eu_tbody {
     font-family: 'NotoSansKR-400';
     font-size: 15px;
     color: #555F6D;
+}
+
+.eu_button.suc_submit:hover {
+    background-color: transparent !important;
+    border: none !important;
+    color: #555F6D !important;
 }
 
 
