@@ -200,13 +200,13 @@ table.eu_910_table tbody tr:hover {
 .page_back_btn i {
     display: inline-block;
     width: 32px;height: 32px;
-    background: url(../../images/icon/arrow-narrow-left.png) no-repeat;
+    background: url(../../images/icon/arrow-narrow-left-32.png) no-repeat;
     background-size: 32px 32px;
     margin-right: 8px;
 }
 
 .page_back_btn:hover i {
-    background: url(../../images/icon/arrow-narrow-left-h.png) no-repeat;
+    background: url(../../images/icon/arrow-narrow-left-32h.png) no-repeat;
     background-size: 32px 32px;
 }
 
