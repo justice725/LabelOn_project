@@ -481,9 +481,9 @@ button.eu_button {
     font-family: 'NotoSansKR-500';
 }
 
-button.eu_button:not(.close_btn):hover {
-    color: #fff !important;
-    background-color: #00466B !important;
+button.eu_button:not(.close_btn):hover, button.eu_button:not(.suc_submit):hover {
+    color: #fff;
+    background-color: #00466B;
 }
 
 /* button hover css guideline */

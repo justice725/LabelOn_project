@@ -59,9 +59,10 @@
     background-size: 24px 24px;
 }
 
-.pop_title_box button:hover {
-    color: #1B242C;
+.pop_title_box button.eu_button:hover {
+    color: #1B242C !important;
     filter: opacity(0.7) drop-shadow(0 0 0 #1B242C);
+    background-color: transparent !important;
 }
 
 .pop_modal .pop_modal_section_btn {

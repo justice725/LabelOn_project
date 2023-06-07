@@ -34,7 +34,7 @@
     font-family: 'NotoSansKR-500';
 }
 
-.pop_modal_application .pop_application_title_box button {
+.pop_modal_application .pop_application_title_box button.eu_button {
     appearance: none;
     border: none;
     background-color: transparent;
@@ -44,9 +44,10 @@
     cursor: pointer;
 }
 
-.pop_modal_application .pop_application_title_box button:hover {
-    color: #1B242C;
+.pop_modal_application .pop_application_title_box button.eu_button:hover {
+    color: #1B242C !important;
     filter: opacity(0.7) drop-shadow(0 0 0 #1B242C);
+    background-color: transparent !important;
 }
 
 .pop_application_content_box {
