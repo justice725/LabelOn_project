@@ -242,6 +242,8 @@
 
 .pop_modal .pop_close_box button:hover {
     text-decoration: underline ;
+    background-color: transparent !important;
+    color: #555F6D !important;
 }
 
 

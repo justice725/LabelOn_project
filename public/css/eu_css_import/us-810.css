@@ -181,6 +181,14 @@
     color: #9EA8B3;
 }
 
+.pop_application_content_box .detail_address > div input.user_current:focus::placeholder {
+    color: transparent;
+}
+
+.pop_application_content_box .detail_address > div input.user_current:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
 .pop_application_content_box .detail_sex {
     width: 100%;
     display: flex;
